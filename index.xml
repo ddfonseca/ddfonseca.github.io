@@ -7,47 +7,8 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2015 Nishanth Shanmugham</copyright>
-    <lastBuildDate>Sun, 23 Apr 2017 11:37:49 -0300</lastBuildDate>
+    <lastBuildDate>Tue, 21 Mar 2017 22:54:46 -0300</lastBuildDate>
     <atom:link href="https://davidfonseca.com.br/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://davidfonseca.com.br/post/My-First-Post/</link>
-      <pubDate>Sun, 23 Apr 2017 11:37:49 -0300</pubDate>
-      
-      <guid>https://davidfonseca.com.br/post/My-First-Post/</guid>
-      <description>
-
-&lt;p&gt;Primeiro post. Teste.&lt;/p&gt;
-
-&lt;h2 id=&#34;welcome-function&#34;&gt;Welcome Function&lt;/h2&gt;
-
-&lt;p&gt;Here is a little python function to welcome you:&lt;/p&gt;
-
-
-def hello_world():
-    print &#34;Hello there!&#34;
-
-</description>
-    </item>
-    
-    <item>
-      <title>About Me</title>
-      <link>https://davidfonseca.com.br/about/</link>
-      <pubDate>Sun, 23 Apr 2017 11:30:59 -0300</pubDate>
-      
-      <guid>https://davidfonseca.com.br/about/</guid>
-      <description>
-
-&lt;p&gt;Olá, seja bem-vindo ao meu site!&lt;/p&gt;
-
-&lt;h2 id=&#34;um-pouco-sobre-mim&#34;&gt;Um pouco sobre mim&lt;/h2&gt;
-
-&lt;p&gt;Apenas testando as funcionalidades do markdown.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/c/c4/Alpaka_33444.jpg&#34; alt=&#34;Great alpaca picture&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
     
     <item>
       <title>your new post</title>
@@ -55,7 +16,82 @@ def hello_world():
       <pubDate>Tue, 21 Mar 2017 22:54:46 -0300</pubDate>
       
       <guid>https://davidfonseca.com.br/blog/your-new-post/</guid>
-      <description></description>
+      <description>&lt;p&gt;Testando&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A small project example : add yours !</title>
+      <link>https://davidfonseca.com.br/projects/small-project/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidfonseca.com.br/projects/small-project/</guid>
+      <description>&lt;p&gt;Exemplo de um projeto. Em breve.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://davidfonseca.com.br/about/</link>
+      <pubDate>Sat, 22 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidfonseca.com.br/about/</guid>
+      <description>&lt;p&gt;Apenas um curioso estudante sobre a vida ;)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://davidfonseca.com.br/projects/projects/</link>
+      <pubDate>Wed, 19 Aug 2015 20:29:37 -0700</pubDate>
+      
+      <guid>https://davidfonseca.com.br/projects/projects/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Em breve mais novidades.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Home</title>
+      <link>https://davidfonseca.com.br/home/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidfonseca.com.br/home/</guid>
+      <description>&lt;p&gt;Um site sobre qualquer coisa envolvendo Linux, LaTeX, CFD e software livre.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>License</title>
+      <link>https://davidfonseca.com.br/license/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidfonseca.com.br/license/</guid>
+      <description>&lt;p&gt;You can use this page to put a license on the contents of your blog, like so:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The MIT License (MIT)&lt;/p&gt;
+
+&lt;p&gt;Copyright &amp;copy; 2015 Nishanth Shanmugham&lt;a href=&#34;mailto:nishanth.gerrard@gmail.com&#34;&gt;nishanth.gerrard@gmail.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &amp;ldquo;Software&amp;rdquo;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:&lt;/p&gt;
+
+&lt;p&gt;The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.&lt;/p&gt;
+
+&lt;p&gt;THE SOFTWARE IS PROVIDED &amp;ldquo;AS IS&amp;rdquo;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
     </item>
     
   </channel>
