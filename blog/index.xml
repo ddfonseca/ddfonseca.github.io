@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on David Fonseca</title>
+    <link>https://davidfonseca.com.br/blog/index.xml</link>
+    <description>Recent content in Blog on David Fonseca</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2015 Nishanth Shanmugham</copyright>
+    <lastBuildDate>Tue, 21 Mar 2017 22:54:46 -0300</lastBuildDate>
+    <atom:link href="https://davidfonseca.com.br/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>your new post</title>
+      <link>https://davidfonseca.com.br/blog/your-new-post/</link>
+      <pubDate>Tue, 21 Mar 2017 22:54:46 -0300</pubDate>
+      
+      <guid>https://davidfonseca.com.br/blog/your-new-post/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://davidfonseca.com.br/post/My-First-Post/</loc>
+    <lastmod>2017-04-23T11:37:49-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidfonseca.com.br/about/</loc>
+    <lastmod>2017-04-23T11:30:59-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidfonseca.com.br/blog/your-new-post/</loc>
+    <lastmod>2017-03-21T22:54:46-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidfonseca.com.br/blog/</loc>
+    <lastmod>2017-03-21T22:54:46-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://davidfonseca.com.br/</loc>
+    <lastmod>2017-04-23T11:37:49-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://davidfonseca.com.br/post/</loc>
+    <lastmod>2017-04-23T11:37:49-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

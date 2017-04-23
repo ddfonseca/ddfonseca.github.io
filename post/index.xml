@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Post on David Fonseca</title>
+    <link>https://davidfonseca.com.br/post/index.xml</link>
+    <description>Recent content in Post on David Fonseca</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2015 Nishanth Shanmugham</copyright>
+    <lastBuildDate>Sun, 23 Apr 2017 11:37:49 -0300</lastBuildDate>
+    <atom:link href="https://davidfonseca.com.br/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>My First Post</title>
+      <link>https://davidfonseca.com.br/post/My-First-Post/</link>
+      <pubDate>Sun, 23 Apr 2017 11:37:49 -0300</pubDate>
+      
+      <guid>https://davidfonseca.com.br/post/My-First-Post/</guid>
+      <description>
+
+&lt;p&gt;Primeiro post. Teste.&lt;/p&gt;
+
+&lt;h2 id=&#34;welcome-function&#34;&gt;Welcome Function&lt;/h2&gt;
+
+&lt;p&gt;Here is a little python function to welcome you:&lt;/p&gt;
+
+
+def hello_world():
+    print &#34;Hello there!&#34;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>
