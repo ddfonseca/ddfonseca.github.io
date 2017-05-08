@@ -35,7 +35,7 @@
 
 &lt;p&gt;Depois de realizar o seu Login no &lt;a href=&#34;https://www.sharelatex.com&#34;&gt;ShareLaTeX&lt;/a&gt;, clique em &lt;strong&gt;Novo projeto&lt;/strong&gt; &amp;ndash;&amp;gt; &lt;strong&gt;Ver todos&lt;/strong&gt;, a última opção dos Modelos. Procure por &lt;strong&gt;abntex&lt;/strong&gt; que você encontrará o &lt;strong&gt;abnTeX2 Model Thesis&lt;/strong&gt;. Se a sua universidade exige um modelo específico, verifique se eles já não disponibilizaram um modelo próprio em LaTeX que você também poderá fazer o upload para o ShareLaTeX. Pronto, você criou o seu primeiro projeto! Agora é só clicar no modelo e depois no botão &lt;strong&gt;Open in ShareLaTeX&lt;/strong&gt; que você encontrará uma tela parecida com essa (clique na imagem para ampliar):&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://davidfonseca.com.br/img/latex_img/tela1.png&#34; alt=&#34;tela 1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://davidfonseca.com.br/img/latex_img/tela1.png&#34;&gt;&lt;img src=&#34;https://davidfonseca.com.br/img/latex_img/tela1.png&#34; alt=&#34;tela 1&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Ao clicar em &lt;strong&gt;Recompilar&lt;/strong&gt;, você verá que todos esses comandos da esquerda se transformarão em um documento em PDF à direita. E também aparecerá um ícone para fazer download do arquivo. Esse documento foi muito bem elaborado para  mostrar todas as funcionalidades da classe abnTeX2, mas para nossos fins de aprendizado, é muita informação. O modelo que desenvolvi para o aprendizado do LaTeX, junto com a classe abnteX, é muito mais simples.&lt;/p&gt;
 
@@ -43,7 +43,7 @@
 
 &lt;p&gt;Após clicar no link, você poderá visualizar o projeto mas não editá-lo diretamente, já que isso impediria que outras pessoas copiassem o modelo em branco. Portanto, você deve criar uma cópia para a sua conta, clicando em &lt;strong&gt;Menu&lt;/strong&gt; &amp;ndash;&amp;gt; &lt;strong&gt;Copiar Projeto&lt;/strong&gt;, conforme pode ser visto na imagem a seguir:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://davidfonseca.com.br/img/latex_img/copiar_projeto.png&#34; alt=&#34;copia 1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://davidfonseca.com.br/img/latex_img/copiar_projeto.png&#34;&gt;&lt;img src=&#34;https://davidfonseca.com.br/img/latex_img/copiar_projeto.png&#34; alt=&#34;copia 1&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Obs: Gostaria de enviar um singelo agradecimento ao Pedro Tadahiro que me forneceu essas imagens.&lt;/p&gt;
 
@@ -59,7 +59,7 @@
 
 &lt;p&gt;Tudo que começa com o o símbolo &lt;code&gt;%&lt;/code&gt; será tratado como um comentário, ou seja, o compilador do LaTeX vai ignorar essas linhas. Então você pode escrever esses comentários para facilitar o entendimento do documento, como fiz com essas três linhas, ou você pode omitir alguns trechos. O próprio ShareLaTeX tem um atalho para facilitar isso. Experimente selecionar um trecho do documento e digitar &lt;code&gt;Ctrl + /&lt;/code&gt;. Será colocado o &lt;code&gt;%&lt;/code&gt; em todas as linhas selecionadas. Se digitar &lt;code&gt;Ctrl + /&lt;/code&gt; novamente, voltará ao normal.&lt;/p&gt;
 
-&lt;p&gt;Muito útil essa função quando o seu documento está dando vários erros e você não sabe exatamente onde está, então você comenta praticamente o documento todo e vai &amp;ldquo;descomentando&amp;rdquo; pequenas partes e compilando novamente. Aí, alguma hora você vai encontrar o erro, mas essa não é uma boa prática. O certo seria: &lt;strong&gt;Escreva pouco&lt;/strong&gt; &amp;ndash;&amp;gt; &lt;strong&gt;Compila&lt;/strong&gt; &amp;ndash;&amp;gt; &lt;strong&gt;Verifica&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Muito útil essa função quando o seu documento está dando vários erros e você não sabe exatamente onde está, então você comenta praticamente o documento todo e vai &amp;ldquo;descomentando&amp;rdquo; pequenas partes e compilando novamente. Aí, alguma hora você vai encontrar o erro, mas essa não é uma boa prática. O certo seria: &lt;strong&gt;Escreva pouco&lt;/strong&gt; &amp;ndash;&amp;gt; &lt;strong&gt;Compila&lt;/strong&gt; &amp;ndash;&amp;gt; &lt;strong&gt;Verifica&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Depois, temos a) o comando &lt;code&gt;\documentclass[a4paper, 12pt, openany, oneside, brazil]{abntex2}&lt;/code&gt; dizendo para criar um documento do tamanho de uma folha A4, tamanho da fonte padrão 12; b) A opção &lt;code&gt;openany&lt;/code&gt; indicando que os capítulos podem ser abertos em qualquer página, diferentemente da opção &lt;code&gt;openright&lt;/code&gt; que permite apenas páginas ímpares; c) a opção&lt;code&gt;oneside&lt;/code&gt; indicando que o documento não é frente-e-verso e, por conta disso, não há páginas em branco, ou seja, todo o documento é preenchido;  por fim, d) a classe &lt;code&gt;abntex2&lt;/code&gt; serve para usarmos diversos comandos, tais como &lt;code&gt;/imprimircapa&lt;/code&gt;, &lt;code&gt;/imprimirfolhaderosto&lt;/code&gt; e &lt;code&gt;\autoref{}&lt;/code&gt;, além de gerar título de Figuras e Tabelas em português e criação do sumário, tudo isso conforme as normas da ABNT.&lt;/p&gt;
 
@@ -230,7 +230,7 @@ Se está em \emph{itálico vai \emph{transformar em normal}}
 
 &lt;pre&gt;&lt;code class=&#34;language-tex&#34;&gt;\section{Notas de rodapé} % idem...
 Escrevendo qualquer coisa apenas para ter a nota de rodapé\footnote{teste1}. \newline
-Escrevendo mais coisas apenas para ter nota de rodapé.\footnote{test2} 
+Escrevendo mais coisas apenas para ter nota de rodapé.\footnote{test2}
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;O resultado você já sabe, pode conferir no &lt;a href=&#34;https://davidfonseca.com.br/pdf/comandos_fundamentais.pdf&#34;&gt;arquivo de pdf&lt;/a&gt;. O comando &lt;code&gt;\newline&lt;/code&gt; vocês já podem imaginar o que acontece, né?&lt;/p&gt;
