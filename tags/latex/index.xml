@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on David Fonseca</title>
-    <link>https://davidfonseca.com.br/blog/index.xml</link>
-    <description>Recent content in Blog on David Fonseca</description>
+    <title>Latex on David Fonseca</title>
+    <link>https://davidfonseca.com.br/tags/latex/index.xml</link>
+    <description>Recent content in Latex on David Fonseca</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2017 David Fonseca</copyright>
-    <lastBuildDate>Wed, 03 May 2017 18:34:15 -0300</lastBuildDate>
-    <atom:link href="https://davidfonseca.com.br/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://davidfonseca.com.br/tags/latex/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>LaTeX para quem quer terminar o TCC em UM mês: Parte 1</title>
