@@ -90,7 +90,7 @@
 
 &lt;h3 id=&#34;passo-3-capítulos-e-seções&#34;&gt;Passo 3: Capítulos e seções?&lt;/h3&gt;
 
-&lt;p&gt;Antes de começar, um aviso: agora &lt;strong&gt;tudo&lt;/strong&gt; o que vamos escrever será dentro do comando &lt;code&gt;\begin{document}&lt;/code&gt; (linha 123) &amp;hellip; (linha 239) \end{document}&lt;code&gt;porque é aqui que começa o seu texto de fato. Vemos que os dois primeiros comandos são o&lt;/code&gt;/imprimircapa&lt;code&gt;e&lt;/code&gt;/imprimirfolhaderosto`, que já foram previamente configurados na etapa anterior. Em seguida, vem a parte do resumo e do abstract, criando uma página com o título &amp;ldquo;Resumo e Abstract&amp;rdquo; e inserindo o seu texto nele.&lt;/p&gt;
+&lt;p&gt;Antes de começar, um aviso: agora &lt;strong&gt;tudo&lt;/strong&gt; o que vamos escrever será dentro do comando &lt;code&gt;\begin{document}&lt;/code&gt; (linha 123) &amp;hellip; &lt;code&gt;\end{document}&lt;/code&gt; (linha 239) porque é aqui que começa o seu texto de fato. Vemos que os dois primeiros comandos são o &lt;code&gt;/imprimircapa&lt;/code&gt; e &lt;code&gt;/imprimirfolhaderosto&lt;/code&gt;, que já foram previamente configurados na etapa anterior. Em seguida, vem a parte do resumo e do abstract, criando uma página com o título &amp;ldquo;Resumo e Abstract&amp;rdquo; e inserindo o seu texto nele.&lt;/p&gt;
 
 &lt;p&gt;Como criar capítulos e seções? Basta digitar os comandos &lt;code&gt;\chapter{}&lt;/code&gt; e &lt;code&gt;\section{}&lt;/code&gt;, ou ainda, &lt;code&gt;\subsection{}&lt;/code&gt; e &lt;code&gt;\subsubsection{}&lt;/code&gt;. Vamos criar o sumário de tudo o que passaremos neste post. Vá para a linha 165 e digite:&lt;/p&gt;
 
