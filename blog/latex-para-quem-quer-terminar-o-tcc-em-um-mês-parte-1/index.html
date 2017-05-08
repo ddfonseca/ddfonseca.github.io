@@ -1052,7 +1052,7 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
 
 <!-- O título veio a tona quando um amigo disse que precisava terminar o famoso Trabalho de Conclusão de Curso (TCC) em apenas 1 mês e não sabia absolutamente nada de LaTeX. Pelo menos há tempo, e não para para a semana que vem por exemplo. O post será bastante objetivo, falando exatamente dos comandos fundamentais que você usará na sua dissertação e, se faltar algum detalhe, não hesite em comentar para que eu possa atualizar o post e beneficiar futuros leitores. -->
 
-<h2 id="pra-quem-não-sabe-o-que-é-latex">Pra quem não sabe o que é LaTeX</h2>
+<h2 id="para-quem-não-sabe-o-que-é-latex">Para quem não sabe o que é LaTeX</h2>
 
 <p>LaTeX, é um sistema tipográfico de alta qualidade e um <em>software</em> livre. Pronuncia-se <em>Lah-tech</em> ou <em>lay-tech</em>. Teoricamente, com o LaTeX você não precisa se preocupar com a formatação, e sim apenas com o conteúdo. Infelizmente, no começo você apenas se preocupará com a formatação. Deverá dedicar um tempo apenas para &ldquo;aprender LaTeX&rdquo; e nada de escrever o seu trabalho por enquanto. Muito provavelmente esse esforço valerá a pena, pois o seu trabalho estará dentro das normas da ABNT e impecável.</p>
 
@@ -1090,7 +1090,7 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
 
 <p>Muito útil essa função quando o seu documento está dando vários erros e você não sabe exatamente onde está, então você comenta praticamente o documento todo e vai &ldquo;descomentando&rdquo; pequenas partes e compilando novamente. Aí, alguma hora você vai encontrar o erro, mas essa não é uma boa prática. O certo seria: <strong>Escreva pouco</strong> &ndash;&gt; <strong>Compila</strong> &ndash;&gt; <strong>Verifica</strong></p>
 
-<p>Depois, temos a) o comando <code>\documentclass[a4paper, 12pt, openany, oneside, brazil]{abntex2}</code> dizendo para criar um documento do tamanho de uma folha A4, tamanho da fonte padrão 12; b) A opção <code>openany</code> indicando que os capítulos podem ser abertos em qualquer página, diferentemente da opção <code>openright</code> que permite apenas páginas ímpares; c) a opção<code>oneside</code> indicando que o documento não é frente-e-verso e, por conta disso, não há páginas em branco, ou seja, todo o documento é preenchido;  por fim, d) a classe <code>abntex2</code> serve para usarmos diversos comandos, tais como <code>/imprimircapa</code> e <code>/imprimirfolhaderosto</code>, <code>\autoref{}</code>, além de gerar título de Figuras e Tabelas em português e criação do sumário, tudo isso conforme as normas da ABNT.</p>
+<p>Depois, temos a) o comando <code>\documentclass[a4paper, 12pt, openany, oneside, brazil]{abntex2}</code> dizendo para criar um documento do tamanho de uma folha A4, tamanho da fonte padrão 12; b) A opção <code>openany</code> indicando que os capítulos podem ser abertos em qualquer página, diferentemente da opção <code>openright</code> que permite apenas páginas ímpares; c) a opção<code>oneside</code> indicando que o documento não é frente-e-verso e, por conta disso, não há páginas em branco, ou seja, todo o documento é preenchido;  por fim, d) a classe <code>abntex2</code> serve para usarmos diversos comandos, tais como <code>/imprimircapa</code>, <code>/imprimirfolhaderosto</code> e <code>\autoref{}</code>, além de gerar título de Figuras e Tabelas em português e criação do sumário, tudo isso conforme as normas da ABNT.</p>
 
 <pre><code class="language-tex">% ---
 % Pacotes fundamentais
@@ -1151,7 +1151,7 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
 Esse é um simples texto.            Não importa os espaços que o LaTeX apenas criará um.
 </code></pre>
 
-<p>Experimente escrever um texto com vários espaços assim e compile. Você perceberá que o LaTeX apenas criará um espaço, uma vez que você não deve se preocupar com a formatação. Assim, caso você cometa o erro de insrir um espaço duplo, o LaTeX corrigirá para você. O mesmo vale para espaços entre parágrafos. Como faço, então, para inserir espaços horizontais e verticais? Hmm, experimente os comandos <code>\hspace{unidade}</code> e <code>\vspace{unidade}</code> e me diga, sendo que unidade pode ser centímetros (cm), milímetros (mm) e polegadas (in).  Exemplo: <code>Foo \hspace{2cm} bar</code>. Inclusive, é possível inserir espaços negativos, como <code>\vpsace{-0.5cm}</code>, o que será muito útil quando quisermos corrigir alguma formatação indesejada do LaTeX.</p>
+<p>Experimente escrever um texto com vários espaços assim e compile. Você perceberá que o LaTeX apenas criará um espaço, uma vez que você não deve se preocupar com a formatação. Assim, caso você cometa o erro de insrir um espaço duplo, o LaTeX corrigirá para você. O mesmo vale para espaços entre parágrafos. Como faço, então, para inserir espaços horizontais e verticais? Hmm, experimente os comandos <code>\hspace{unidade}</code> e <code>\vspace{unidade}</code> e me diga, sendo que unidade pode ser em centímetros (cm), milímetros (mm) ou polegadas (in).  Exemplo: <code>Foo \hspace{2cm} bar</code>. Inclusive, é possível inserir espaços negativos, como <code>\vpsace{-0.5cm}</code>, o que será muito útil quando quisermos corrigir alguma formatação indesejada do LaTeX.</p>
 
 <h4 id="formatação-básica">Formatação Básica</h4>
 
@@ -1179,7 +1179,7 @@ Se está em \emph{itálico vai \emph{transformar em normal}}
 
 <h3 id="listas">Listas</h3>
 
-<p>Como criar aquelas itens de pontinhos pretos ou itens numeradas? No LaTeX, eles são chamados de listas.</p>
+<p>Como criar aqueles itens de pontinhos pretos ou itens numeradas? No LaTeX, eles são chamados de listas.</p>
 
 <p>Agora, veremos o nosso primeiro ambiente. Tudo o que começa com <code>\begin{ambiente}</code>, precisa terminar com <code>\end{ambiente}</code>, senão ocorre um erro. Mas não se preocupe: utilizaremos a função autocompletar do ShareLaTeX para facilitar a nossa vida.</p>
 
@@ -1221,7 +1221,7 @@ Se está em \emph{itálico vai \emph{transformar em normal}}
 
 <p>Listas fazem parte das atividades diárias e são facilmente criadas em editores de texto comuns, sobretudo em <em>slides</em>. No LaTEX, pense no atalho da função autocompletar para digitar a sequência acima.</p>
 
-<h3 id="símbolos-especiais-especiais">Símbolos especiais especiais</h3>
+<h3 id="símbolos-especiais">Símbolos especiais</h3>
 
 <p>Existem alguns caracteres que você não conseguirá escrever porque são considerados símbolos especiais, isto é, fazem parte da linguagem TeX para o compilador reconhecer algumas funções. Já vimos a porcentagem <code>%</code> para inserir comentários, mas existem outros como estes:</p>
 
@@ -1255,7 +1255,7 @@ Se está em \emph{itálico vai \emph{transformar em normal}}
 
 <h3 id="notas-de-rodapé">Notas de rodapé</h3>
 
-<p>Notas de rodapé também são simples de serem inseridas no LaTeX. Utilizando o comando <code>\footnote{}</code> no texto, será inserida uma nota de rodapé ao final. Por exemplo:</p>
+<p>Notas de rodapé também são simples de serem inseridas no LaTeX. Utilizando o comando <code>\footnote{}</code> no texto, será inserida uma nota de rodapé ao final da página. Por exemplo:</p>
 
 <pre><code class="language-tex">\section{Notas de rodapé} % idem...
 Escrevendo qualquer coisa apenas para ter a nota de rodapé\footnote{teste1}. \newline

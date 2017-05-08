@@ -24,7 +24,7 @@
 
 &lt;!-- O título veio a tona quando um amigo disse que precisava terminar o famoso Trabalho de Conclusão de Curso (TCC) em apenas 1 mês e não sabia absolutamente nada de LaTeX. Pelo menos há tempo, e não para para a semana que vem por exemplo. O post será bastante objetivo, falando exatamente dos comandos fundamentais que você usará na sua dissertação e, se faltar algum detalhe, não hesite em comentar para que eu possa atualizar o post e beneficiar futuros leitores. --&gt;
 
-&lt;h2 id=&#34;pra-quem-não-sabe-o-que-é-latex&#34;&gt;Pra quem não sabe o que é LaTeX&lt;/h2&gt;
+&lt;h2 id=&#34;para-quem-não-sabe-o-que-é-latex&#34;&gt;Para quem não sabe o que é LaTeX&lt;/h2&gt;
 
 &lt;p&gt;LaTeX, é um sistema tipográfico de alta qualidade e um &lt;em&gt;software&lt;/em&gt; livre. Pronuncia-se &lt;em&gt;Lah-tech&lt;/em&gt; ou &lt;em&gt;lay-tech&lt;/em&gt;. Teoricamente, com o LaTeX você não precisa se preocupar com a formatação, e sim apenas com o conteúdo. Infelizmente, no começo você apenas se preocupará com a formatação. Deverá dedicar um tempo apenas para &amp;ldquo;aprender LaTeX&amp;rdquo; e nada de escrever o seu trabalho por enquanto. Muito provavelmente esse esforço valerá a pena, pois o seu trabalho estará dentro das normas da ABNT e impecável.&lt;/p&gt;
 
@@ -62,7 +62,7 @@
 
 &lt;p&gt;Muito útil essa função quando o seu documento está dando vários erros e você não sabe exatamente onde está, então você comenta praticamente o documento todo e vai &amp;ldquo;descomentando&amp;rdquo; pequenas partes e compilando novamente. Aí, alguma hora você vai encontrar o erro, mas essa não é uma boa prática. O certo seria: &lt;strong&gt;Escreva pouco&lt;/strong&gt; &amp;ndash;&amp;gt; &lt;strong&gt;Compila&lt;/strong&gt; &amp;ndash;&amp;gt; &lt;strong&gt;Verifica&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Depois, temos a) o comando &lt;code&gt;\documentclass[a4paper, 12pt, openany, oneside, brazil]{abntex2}&lt;/code&gt; dizendo para criar um documento do tamanho de uma folha A4, tamanho da fonte padrão 12; b) A opção &lt;code&gt;openany&lt;/code&gt; indicando que os capítulos podem ser abertos em qualquer página, diferentemente da opção &lt;code&gt;openright&lt;/code&gt; que permite apenas páginas ímpares; c) a opção&lt;code&gt;oneside&lt;/code&gt; indicando que o documento não é frente-e-verso e, por conta disso, não há páginas em branco, ou seja, todo o documento é preenchido;  por fim, d) a classe &lt;code&gt;abntex2&lt;/code&gt; serve para usarmos diversos comandos, tais como &lt;code&gt;/imprimircapa&lt;/code&gt; e &lt;code&gt;/imprimirfolhaderosto&lt;/code&gt;, &lt;code&gt;\autoref{}&lt;/code&gt;, além de gerar título de Figuras e Tabelas em português e criação do sumário, tudo isso conforme as normas da ABNT.&lt;/p&gt;
+&lt;p&gt;Depois, temos a) o comando &lt;code&gt;\documentclass[a4paper, 12pt, openany, oneside, brazil]{abntex2}&lt;/code&gt; dizendo para criar um documento do tamanho de uma folha A4, tamanho da fonte padrão 12; b) A opção &lt;code&gt;openany&lt;/code&gt; indicando que os capítulos podem ser abertos em qualquer página, diferentemente da opção &lt;code&gt;openright&lt;/code&gt; que permite apenas páginas ímpares; c) a opção&lt;code&gt;oneside&lt;/code&gt; indicando que o documento não é frente-e-verso e, por conta disso, não há páginas em branco, ou seja, todo o documento é preenchido;  por fim, d) a classe &lt;code&gt;abntex2&lt;/code&gt; serve para usarmos diversos comandos, tais como &lt;code&gt;/imprimircapa&lt;/code&gt;, &lt;code&gt;/imprimirfolhaderosto&lt;/code&gt; e &lt;code&gt;\autoref{}&lt;/code&gt;, além de gerar título de Figuras e Tabelas em português e criação do sumário, tudo isso conforme as normas da ABNT.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-tex&#34;&gt;% ---
 % Pacotes fundamentais
@@ -123,7 +123,7 @@
 Esse é um simples texto.            Não importa os espaços que o LaTeX apenas criará um.
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Experimente escrever um texto com vários espaços assim e compile. Você perceberá que o LaTeX apenas criará um espaço, uma vez que você não deve se preocupar com a formatação. Assim, caso você cometa o erro de insrir um espaço duplo, o LaTeX corrigirá para você. O mesmo vale para espaços entre parágrafos. Como faço, então, para inserir espaços horizontais e verticais? Hmm, experimente os comandos &lt;code&gt;\hspace{unidade}&lt;/code&gt; e &lt;code&gt;\vspace{unidade}&lt;/code&gt; e me diga, sendo que unidade pode ser centímetros (cm), milímetros (mm) e polegadas (in).  Exemplo: &lt;code&gt;Foo \hspace{2cm} bar&lt;/code&gt;. Inclusive, é possível inserir espaços negativos, como &lt;code&gt;\vpsace{-0.5cm}&lt;/code&gt;, o que será muito útil quando quisermos corrigir alguma formatação indesejada do LaTeX.&lt;/p&gt;
+&lt;p&gt;Experimente escrever um texto com vários espaços assim e compile. Você perceberá que o LaTeX apenas criará um espaço, uma vez que você não deve se preocupar com a formatação. Assim, caso você cometa o erro de insrir um espaço duplo, o LaTeX corrigirá para você. O mesmo vale para espaços entre parágrafos. Como faço, então, para inserir espaços horizontais e verticais? Hmm, experimente os comandos &lt;code&gt;\hspace{unidade}&lt;/code&gt; e &lt;code&gt;\vspace{unidade}&lt;/code&gt; e me diga, sendo que unidade pode ser em centímetros (cm), milímetros (mm) ou polegadas (in).  Exemplo: &lt;code&gt;Foo \hspace{2cm} bar&lt;/code&gt;. Inclusive, é possível inserir espaços negativos, como &lt;code&gt;\vpsace{-0.5cm}&lt;/code&gt;, o que será muito útil quando quisermos corrigir alguma formatação indesejada do LaTeX.&lt;/p&gt;
 
 &lt;h4 id=&#34;formatação-básica&#34;&gt;Formatação Básica&lt;/h4&gt;
 
@@ -151,7 +151,7 @@ Se está em \emph{itálico vai \emph{transformar em normal}}
 
 &lt;h3 id=&#34;listas&#34;&gt;Listas&lt;/h3&gt;
 
-&lt;p&gt;Como criar aquelas itens de pontinhos pretos ou itens numeradas? No LaTeX, eles são chamados de listas.&lt;/p&gt;
+&lt;p&gt;Como criar aqueles itens de pontinhos pretos ou itens numeradas? No LaTeX, eles são chamados de listas.&lt;/p&gt;
 
 &lt;p&gt;Agora, veremos o nosso primeiro ambiente. Tudo o que começa com &lt;code&gt;\begin{ambiente}&lt;/code&gt;, precisa terminar com &lt;code&gt;\end{ambiente}&lt;/code&gt;, senão ocorre um erro. Mas não se preocupe: utilizaremos a função autocompletar do ShareLaTeX para facilitar a nossa vida.&lt;/p&gt;
 
@@ -193,7 +193,7 @@ Se está em \emph{itálico vai \emph{transformar em normal}}
 
 &lt;p&gt;Listas fazem parte das atividades diárias e são facilmente criadas em editores de texto comuns, sobretudo em &lt;em&gt;slides&lt;/em&gt;. No LaTEX, pense no atalho da função autocompletar para digitar a sequência acima.&lt;/p&gt;
 
-&lt;h3 id=&#34;símbolos-especiais-especiais&#34;&gt;Símbolos especiais especiais&lt;/h3&gt;
+&lt;h3 id=&#34;símbolos-especiais&#34;&gt;Símbolos especiais&lt;/h3&gt;
 
 &lt;p&gt;Existem alguns caracteres que você não conseguirá escrever porque são considerados símbolos especiais, isto é, fazem parte da linguagem TeX para o compilador reconhecer algumas funções. Já vimos a porcentagem &lt;code&gt;%&lt;/code&gt; para inserir comentários, mas existem outros como estes:&lt;/p&gt;
 
@@ -227,7 +227,7 @@ Se está em \emph{itálico vai \emph{transformar em normal}}
 
 &lt;h3 id=&#34;notas-de-rodapé&#34;&gt;Notas de rodapé&lt;/h3&gt;
 
-&lt;p&gt;Notas de rodapé também são simples de serem inseridas no LaTeX. Utilizando o comando &lt;code&gt;\footnote{}&lt;/code&gt; no texto, será inserida uma nota de rodapé ao final. Por exemplo:&lt;/p&gt;
+&lt;p&gt;Notas de rodapé também são simples de serem inseridas no LaTeX. Utilizando o comando &lt;code&gt;\footnote{}&lt;/code&gt; no texto, será inserida uma nota de rodapé ao final da página. Por exemplo:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-tex&#34;&gt;\section{Notas de rodapé} % idem...
 Escrevendo qualquer coisa apenas para ter a nota de rodapé\footnote{teste1}. \newline
@@ -260,7 +260,9 @@ Escrevendo mais coisas apenas para ter nota de rodapé.\footnote{test2}
       <pubDate>Sat, 22 Aug 2015 00:00:00 +0000</pubDate>
       
       <guid>https://davidfonseca.com.br/about/</guid>
-      <description>&lt;p&gt;Apenas um curioso estudante sobre a vida ;)&lt;/p&gt;
+      <description>&lt;p&gt;Olá, mundo!&lt;/p&gt;
+
+&lt;p&gt;Estou graduando em Engenharia Mecânica pela Universidade Federal do Rio de Janeiro - &lt;em&gt;campus&lt;/em&gt; Macaé. Sou amante do sistema operacional Linux e de &lt;em&gt;software&lt;/em&gt; livre.&lt;/p&gt;
 </description>
     </item>
     
