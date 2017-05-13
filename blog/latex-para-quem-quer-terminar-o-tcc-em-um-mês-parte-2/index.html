@@ -11,7 +11,7 @@
 <meta name="description" content="Example blog">
 
 
-<meta property="twitter:title" content="License">
+<meta property="twitter:title" content="LaTeX para quem quer terminar o TCC em UM mês: Parte 2">
 
     <meta property="twitter:card" content="summary">
 
@@ -20,10 +20,10 @@
 <title>
 
 
-     David Fonseca - License 
+     David Fonseca - LaTeX para quem quer terminar o TCC em UM mês: Parte 2 
 
 </title>
-<link rel="canonical" href="https://davidfonseca.com.br/license/">
+<link rel="canonical" href="https://davidfonseca.com.br/blog/latex-para-quem-quer-terminar-o-tcc-em-um-m%C3%AAs-parte-2/">
 
 
 <style media="screen">
@@ -1012,47 +1012,254 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
     </div>
 </section>
 
-<section class="main">
+
+<section class="main post non-narrow zero-top-spacing">
     <div class="container">
         <div class="content">
-            <div class="page-heading">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
 
-    License
+    LaTeX para quem quer terminar o TCC em UM mês: Parte 2
 
 </div>
 
+                </div>
+                <div class="meta">
+                    <div class="date" title="Mon May 8 2017 20:30:35 -03">May 8, 2017</div>
+                    
+                        
+                    
+                    <div class="reading-time"><div class="middot"></div>10 minute read</div>
+                    <div class="tags">
+                        <ul>
+                          
+                            <div class="middot"></div>
+                            <li><a href="https://davidfonseca.com.br/tags/latex">latex</a> </li>
+                          
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div class="markdown">
                 
     
     
 
-<h1 id="the-mit-license-mit">The MIT License (MIT)</h1>
+<h2 id="equações-matemáticas">Equações Matemáticas</h2>
 
-<p>Copyright &copy; 2017 David Fonseca &lt;<a href="mailto:olfdavid@gmail.com">olfdavid@gmail.com</a>&gt;</p>
+<p>No <a href="https://davidfonseca.com.br/blog/latex-para-quem-quer-terminar-o-tcc-em-um-m%C3%AAs-parte-1/">primeiro post</a>, vocês tiveram o primeiro contato com o LaTeX. Conheceram o <a href="https://pt.sharelatex.com">ShareLaTeX</a> e algumas formatações básicas do texto. Hoje, vamos aprender a mexer com as equações matemáticas, figuras e tabelas. Quem nunca teve uma tremenda dor de cabeça para editar todas aquelas fórmulas no MS Word? No LaTeX pode até ser pior, mas só no começo. Com o tempo você se acostumará e só vai querer usar essas fórmulas.</p>
 
-<p>Permission is hereby granted, free of charge, to any person obtaining a copy
- of this software and associated documentation files (the &ldquo;Software&rdquo;), to deal
- in the Software without restriction, including without limitation the rights
- to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- copies of the Software, and to permit persons to whom the Software is
- furnished to do so, subject to the following conditions:</p>
+<h3 id="equações-na-linha">Equações na linha</h3>
 
-<p>The above copyright notice and this permission notice shall be included in
- all copies or substantial portions of the Software.</p>
+<pre><code class="language-tex">\chapter{Equações Matemáticas} % estamos aqui
+\section{Equação na linha}
+Podemos utilizar símbolos matemáticos enquanto escrevemos, como por exemplo: $\sum_{n=1}^x n^2$.
+No entanto, podemos atribuir o comando:  $\displaystyle\sum_{n=1}^{x} n^2$, para visualizá-las melhor.
+</code></pre>
 
-<p>THE SOFTWARE IS PROVIDED &ldquo;AS IS&rdquo;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- THE SOFTWARE.</p>
+<p>Resultado:
+<figure class="progressive"><img class="progressive__img progressive--not-loaded" data-progressive="https://davidfonseca.com.br/img/latex_img/eqlinha.png" src="https://davidfonseca.com.br/img/latex_img/low/eqlinha.png" alt="eq linha" /></p></figure>
+
+<p>Aqui temos um exemplo dos comandos somatório <code>\sum</code>, sobrescrito &ldquo;^&rdquo; e subscrito &ldquo;_&rdquo;. Para incluir as equações no texto, enquanto estamos escrevendo, devemos colocá-las entre o cifrão ($). Desse modo, todos os <a href="ftp://ftp.ams.org/ams/doc/amsmath/short-math-guide.pdf">comandos matemáticos</a> estarão disponíveis para nós. Esse foi um exemplo de três comandos matemáticos. O subscrito esteve entre chaves porque foi mais de um caractere, o mesmo poderia ocorrer com o subscrito. O comando <code>\displaystyle</code> melhora a visualização de algumas fórmulas na linha, como essa do somatório.</p>
+
+<h3 id="ambiente-matemático">Ambiente matemático</h3>
+
+<p>Vamos supor que você introduzirá uma equação no seu texto e depois explicará cada variável.</p>
+
+<pre><code class="language-tex">\section{Ambiente matemático} % Estamos aqui
+
+O coeficiente de Reynolds ($Re$) é um número adimensional muito utilizado na mecânica dos fluidos.
+Com ele, é possíve avaliar o regime do escoamento como laminar ou turbulento. É dado pela equação abaixo:
+\begin{equation} \label{eq:re}
+    Re = \frac{\rho V D}{\mu}
+\end{equation}
+Sendo que $\rho$ é a massa específica, $V$ a velocidade do fluido, $D$ o diâmetro e $mu$ a viscosidade cinemática.
+</code></pre>
+
+<p>Resultado:
+<figure class="progressive"><img class="progressive__img progressive--not-loaded" data-progressive="https://davidfonseca.com.br/img/latex_img/reynolds.png" src="https://davidfonseca.com.br/img/latex_img/low/reynolds.png" alt="reyolds " /></p></figure>
+
+<p>Aqui está um exemplo de uso real das equações matemáticas, vamos por partes. Primeiro, observe que não há espaço entre o texto e o <code>\begin{equation}</code>. Isso porque se houvesse o LaTeX criaria uma nova linha, deixando a sua equação ainda mais para baixo. O mesmo acontece no <code>end{equation}</code>. Experimente criar esses espaços e compilar novamente. Segundo, criamos o ambiente <code>\begin{equation} ... \end{equation}</code>, nele o LaTeX centraliza a fórmula e atribui um número que será na ordem crescente. Está (2.1) porque o estamos no capítulo 2 e essa foi a primeira equação. A próxima seria (2.2) e assim por diante.</p>
+
+<p>Podemos mudar a numeração ao incluir o comando <code>\counterwithout{equation}{chapter}</code> no seu preâmbulo, sugiro colocar na seção de comandos personalizados pelo usuário, entre as linhas 114~120. Assim, não incluirá mais o capítulo. Se o seu trabalho tem por volta de 5 páginas e poucas equações e mesmo assim você gostaria de uma capa, folha de rosto, sumário e referências bibliográficas nas normas, poderia usar esse template com essa opção.</p>
+
+<p>Terceiro, colocamos um <em>label</em> (rótulo) na fórmula, de modo que poderíamos referenciar ela mais tarde. Dentro do <em>label</em> você pode incluir qualquer nome que desejar, eu particularmente gosto de ser coerente e por isso incluo um prefixo como <em>eq</em>, mas isso é opcional. Podemos então referenciar as equações utilizando três comandos: <code>\ref{eq:re}</code>, <code>\eqref{eq:re}</code> ou o meu predileto <code>\autoref{eq:re}</code>. O primeiro imprime o número, o segundo o número com um parênteses e o terceiro o nome da referencia mais o número, nesse caso &ldquo;Equação (2.1)&rdquo;. Se fosse um <em>label</em> de uma Tabela ou Figura, ele incluiria os respectivos nomes.</p>
+
+<p>Dentro do ambiente matemático, temos três comandos: duas letras gregas e uma fração. As letras gregas são escritas conforme são &ldquo;faladas&rdquo;. Imagine então, o comando da letra grega pi? Acertou <code>\pi</code>!. A fração é dada por essa fórmula <code>\frac{numerador}{denominador}</code> em que o numerador e denominador são separados entre essas chaves.</p>
+
+<p>Aliás, o ambiente matemático pode ser inicializado com a seguinte sequência no ShareLaTeX: \beeq&lt;CR&gt;</p>
+
+<pre><code class="language-tex">A fórmula de Bhaskara é dada por:
+\begin{equation}\label{eq:bhaskara}
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\end{equation}
+
+Calcule as raízes da equação $x^2 + 12x - 13 = 0$ com a \autoref{eq:bhaskara}.
+\begin{equation*}
+ x = \frac{-12 \pm \sqrt{12^2 - (4)(1)(-13)}}{(2)(1)} = \frac{-12 \pm \sqrt{196}}{2} = \frac{-12 \pm 14}{2} = -6 \pm 7
+\end{equation*}
+Logo, as raízes são: $x_1 = 1$ e $x_2 = -13$.
+</code></pre>
+
+<p>Aqui está outro exemplo e dessa vez utilizamos o ambiente <em>equation*</em> para iniciar um ambiente matemático sem nenhum numeração. Assim também podemos escrever fórmulas centralizadas como o exemplo acima. O resultado:</p>
+
+<p><figure class="progressive"><img class="progressive__img progressive--not-loaded" data-progressive="https://davidfonseca.com.br/img/latex_img/bhaskara.png" src="https://davidfonseca.com.br/img/latex_img/low/bhaskara.png" alt="bhaskara" /></p></figure>
+
+<p>O comando <code>\sqrt{}</code> e <code>\pm</code> significam <em>SQuareRooT</em> (raíz quadradra) e <em>plus-minus</em> (mais ou menos).</p>
+
+<h3 id="para-fórmulas-complicadas-e-aprendizado">Para fórmulas complicadas e aprendizado</h3>
+
+<p>Gostaria que vocês visitassem o <a href="https://www.codecogs.com/latex/eqneditor.php">CodeCogs</a>, que é um editor online para equações matemáticas basedo no LaTeX. Nele vocês podem brincar à vontade e verificar se a fórmula está como queira. O <em>feedback</em> lá é imediato, de modo que podemos verificar se a sua equação está correta ou não. Junto com o <a href="ftp://ftp.ams.org/ams/doc/amsmath/short-math-guide.pdf">Short Math Guide for LaTeX</a>, vocês têm praticamente tudo para tirar as suas dúvidas.</p>
+
+<h2 id="figuras">Figuras</h2>
+
+<p>As figuras são tão simples nos editores convencionais. Basta arrastar para o arquivo e pronto! Sua figura está lá, ajeita um pouco com o mouse e tudo fica direitinho. No LaTeX implementar figuras é um pouquinho complicado, mas vamos lá:</p>
+
+<pre><code class="language-tex">\begin{figure}[!htb]
+ \centering
+ \caption{Título}
+ \includegraphics[scale=0.5]{abntex2-modelo-img-grafico.pdf}
+ \legend{Fonte: \citeonline[p. ~24]{araujo2012}}
+\end{figure}
+</code></pre>
+
+<p>Criamos um novo ambiente chamado <em>figure</em>, nele o LaTeX (junto com a classe abntex2) começará a numerar as suas figuras. E como ele sabe que isso é uma figura, também criará automaticamente a Lista de Figuras. No caso, a gente retirou essa opção para ficar um trabalho mais simples, até porque, isso é opcional pelas normas da ABNT. Dentro desse ambiente, estamos centralizando tudo, a imagem, título e legenda com a comando <code>\centering</code>. O comando <code>\caption{}</code> cria o título da sua imagem, o comando <code>\includegraphics[opções]{caminho_da_imagem}</code> inclui uma figura nova, nesse caso colocamos já uma imagem que está no diretório raiz do projeto. Outros caminhos também são possíveis, como veremos adiante.</p>
+
+<p>Utilizamos a opção <em>scale</em> com o dimensionamento da imagem em 50%, calhou que deu certo, mas normalmente utilizo a opção <em>width=0.95\textwidth</em> (dentro dos colchetes). Pois assim temos uma ideia melhor de como a imagem vai ser preenchida no texto. Se minha imagem tem uma altura muito maior que a largura, então colocaria um <em>width=0.4\textwidth</em> por exemplo, com a prática vocês vão pegando o jeito.</p>
+
+<p>Pela norma, precisamos sempre colocar a fonte nas imagens, mesmo que seja uma imagem de sua autoria. Nesse caso, deverá ser colocado assim: &ldquo;Figura produzida pelo autor.&rdquo;, ou algo semelhante. Também foi utilizado a citação direta do autor com o comando <code>\citeonline{bibkey}</code>, mas isso será falado no próximo post.</p>
+
+<p>E se quisermos colocar figuras lado a lado ? Também é possível com o pacote <em>caption</em>, que permite utilizar o ambiente <em>subfigure</em>.</p>
+
+<pre><code class="language-tex">\begin{figure}[htb]
+	\centering
+        \caption{\label{fig:16-13} Uso de aletas para aumentar a transferência de calor de uma parede plana}
+        \begin{subfigure}[t]{0.3\textwidth}
+            \centering
+            \includegraphics[width=0.95\textwidth]{img/fig16-13a.png}
+            \caption{Superfície sem aletas}\label{fig:16-13a}
+        \end{subfigure}
+    	\hspace{10mm}
+        \begin{subfigure}[t]{0.3\textwidth}
+            \centering
+            \includegraphics[width=0.95\textwidth]{img/fig16-13b.png}
+            \caption{Superfície aletada}\label{fig:16-13b}
+	\end{subfigure}
+    \legend{Fonte: \citeonline{shapiro}}
+\end{figure}
+</code></pre>
+
+<p>Resultado:
+<figure class="progressive"><img class="progressive__img progressive--not-loaded" data-progressive="https://davidfonseca.com.br/img/latex_img/ladolado.png" src="https://davidfonseca.com.br/img/latex_img/low/ladolado.png" alt="lado a lado" /></p></figure>
+
+<p>Temos um comando gigante, não é? Em alguns editores de texto, existe uma função chamada de <em>snippet</em>. Essa função permite replicar uma parte do seu código com uma simples referência. No meu, apenas digito <em>sub<TAB></em> que esse código enorme já abre, além disso conforme vou editando, continuo escrevendo e usando o tab para ir apenas nas partes em que é necessário editar, veja nesse exemplo:</p>
+
+<p><figure class="progressive"><img class="progressive__img progressive--not-loaded" data-progressive="https://davidfonseca.com.br/img/latex_img/snip.gif" src="https://davidfonseca.com.br/img/latex_img/low/snip.gif" alt="snip gif" /></p></figure>
+
+<p>Ok, vamos entender o código agora. Veja que temos o usual <code>\caption</code> logo depois do <code>\centering</code> para centralizar toda a imagem. Nesse caso temos mais duas subimagens e perceba que defini o tamanho como <sup>1</sup>&frasl;<sub>3</sub> da largura do papel. Poderíamos ter colocado 0.5\textwidth, mas como sei que essa imagem tem uma altura maior que a largura, ficaria muito grande. Nesse caso, é possível incluir uma terceira imagem já que dividi o tamanho em <sup>1</sup>&frasl;<sub>3</sub>, mas só coloquei duas. Por isso que adicionei um `\hspace{10mm} no meio das duas figuras para não ficar muito colado. Dentro de cada subimagem também as preenchi com quase todo o tamnho disponível para elas, com 0.95\textwidht, essa opção normalmente não precisa mudar. Por fim temos a fonte das duas imagens e um <em>label</em> para cada subimagem e imagem.</p>
+
+<h2 id="tabelas">Tabelas</h2>
+
+<p>Criar tabela é bem chatinho no LaTeX. Veja o comando para criar uma tabela tão simples:</p>
+
+<pre><code class="language-tex">\begin{table}[!htb]
+    \centering
+    \caption{Dados dos alunos} \label{tab:teste}
+    \begin{tabular}{lll}
+        \hline
+        Nome &amp; Sobrenome &amp; Idade \\
+        \hline
+        David &amp; Fonseca &amp; 25 \\
+        Fulano &amp; deTal &amp; 35 \\
+        \hline
+    \end{tabular}
+    \legend{Fonte: Tabela produzida pelos autores}
+\end{table}
+</code></pre>
+
+<p>Resultado:
+<figure class="progressive"><img class="progressive__img progressive--not-loaded" data-progressive="https://davidfonseca.com.br/img/latex_img/dados.png" src="https://davidfonseca.com.br/img/latex_img/low/dados.png" alt="dados" style="width: 450px;"/></p></figure>
+
+<p>O ambiente <em>table</em> é apenas para indicar que isso será uma tabela e e criar aquela lista de tabelas que não foi incluso nesse <em>template</em>. Temos o usual <em>caption</em> e <em>legend</em>, igual em figuras, mas a tabela em si começa no ambiente <em>tabular</em>. Vamos entendê-lo. Temos três colunas, por isso temos três caracteres <em>{lll}</em> dentro das chaves. Esses caracteres definem o alinhamento do texto na coluna, que no caso estão alinhadas pela esquerda (<em>l</em> de <em>left</em>), para alinhar no centro, digite <em>c</em> e para a direita, digite <em>r</em>. Experimente colocar {lcr} e compilar novamente. Para adicionar uma nova coluna, basta adicionar mais um caractere com o respectivo alinhamento.</p>
+
+<p>O comando <code>\hline</code> serve para criar uma linha horizontal, mas também temos o <code>\toprule</code> ou <code>\bottomrule</code> para criar uma linha um pouco mais grossa no topo e no fundo da tabela. Vai de preferência de cada um. Lembra dos caracteres especiais do <a href="https://davidfonseca.com.br/blog/latex-para-quem-quer-terminar-o-tcc-em-um-m%C3%AAs-parte-1/">primeiro post</a>? O <strong>&amp;</strong> dentro do ambiente <em>tabular</em> serve para separar as colunas. Assim, vai digitando e separando-as pelo <strong>&amp;</strong>. Para encerrar a linha, temos o comando <code>\\</code> é a mesma coisa que <code>\newline</code>. Ou seja, ele pula para a próxima linha da tabela. Pronto, criamos uma tabela simples! Essas partes o LaTeX deixam a desejar, mas existem muitas formas de transformar as suas tabelas muito mais bonitas do que os editores convencionais. Veja <a href="https://tex.stackexchange.com/questions/112343/beautiful-table-samples">esse</a> e <a href="https://www.inf.ethz.ch/personal/markusp/teaching/guides/guide-tables.pdf">esse outro</a> linha. Uma vez que são apenas códigos, basta copiar e colar no seu arquivo que terá o mesmo efeito.</p>
+
+<p>Para finalizar, uma tabela com duas colunas dentro de uma coluna:</p>
+
+<pre><code class="language-tex">\begin{table}[!htb]
+    \centering
+    \caption{Rugosidade para diferentes Materiais}
+    \begin{tabular}{l l l} \toprule
+	&amp; \multicolumn{2}{c}{Rugosidade, \textit{e}} \\
+	\cline{2-3}
+	Tubo  &amp; Pés &amp; Milímetros \\
+	\hline
+	Aço rebitado &amp; 0,003-0,03 &amp; 0,9-9 \\
+	Concreto &amp; 0,001-0,01 &amp; 0,3-3 \\
+	Madeira &amp; 0,0006-0,003 &amp; 0,2-0,9 \\
+	Ferro Fundido &amp; 0,00085 &amp; 0,26 \\
+	Ferro Galvanizado &amp; 0,0005 &amp; 0,15 \\
+	Ferro fundido asfaltado &amp; 0,0004 &amp; 0,12 \\
+	Aço comercial ou ferro forjado &amp; 0,00015 &amp; 0,046 \\
+	\bottomrule
+    \end{tabular}
+    \legend{Fonte: \citeonline{fox}.}
+\end{table}
+</code></pre>
+
+<p>Resultado:
+<figure class="progressive"><img class="progressive__img progressive--not-loaded" data-progressive="https://davidfonseca.com.br/img/latex_img/tabelamultipla.png" src="https://davidfonseca.com.br/img/latex_img/low/tabelamultipla.png" alt="tabela multipla" style="width: 500px;"/></p></figure>
+
+<p>Se você quisesse escrever &ldquo;Rugosidade, e&rdquo; entre a segunda e terceira coluna encontraria problemas. A solução para isso é criar uma &ldquo;multicoluna&rdquo; que ocupará esse papel e junto com ela, uma linha que apenas cobre essas duas colunas. Vamos lá, primeiro observe que não temos nada na primeira coluna da primeira linha, por isso já inicio essa linha mudando para a segunda coluna com o <strong>&amp;</strong>. Aqui criamos a coluna múltipla, que ocupará 2 colunas e que ficará centralizada, por isso o {2}{c}. Depois preenchemos com o que queremos nessa coluna. Pulo a linha e inicio o <code>cline{2-3}</code>, que apenas criará uma linha na coluna 2 e 3. Fechou! O resto é igualzinho a tabela anterior. Adicionei o <code>\toprule</code> e <code>\bottomrule</code> também para vocês notarem a diferença.</p>
+
+<h3 id="sobre-o-comando-label">Sobre o comando <strong>\label{}</strong></h3>
+
+<p>Esse comando você deve usar e abusar dele, porque é justamente com ele que torna a editação do LaTeX prazerosa de usar. Toda vez que criar um Capítulo, Seção, Equação, Figura ou Tabela que será referenciado ao longo do texto, use o <code>\label{}</code> e referencie com <code>\ref{}</code> ou <code>\autoref{}</code>. Desse modo, é possível retirar um capítulo inteiro do seu texto que o LaTeX automaticamente reorganizará a numeração dos Capítulos, Seções, Equações, Figuras e Tabelas. Assim, todas as referências com o <code>\label{}</code> estarão corretas. Quando vocês sentirem o poder do <code>\label{}</code>, vão entender porque escrever no LaTeX é tão prazeroso.</p>
+
+<h2 id="conclusão-da-parte-2">Conclusão da parte 2</h2>
+
+<p>Bom, com isso já temos uma boa bagagem do LaTeX. Sabemos organizar a dissertação com capítulos e seções de modo que o LaTeX criará o sumário. Também aprendemos um pouco de equações matemáticas que infelizmente só pude mostrar o básico. Só com o tempo para aprender de fato esse universo. Também aprendemos a incluir Figuras e Tabelas. Fora isso, só vai faltar as referências bibliográficas para completar essa serie de posts sobre <em>comandos fundamentais do LaTeX</em>, ou em outras palavras, &ldquo;como formatar o seu TCC faltando 1 mês&rdquo;.</p>
+
+<p>Obs:  Utilizo o <em>snippet</em> para praticamente qualquer comando do LaTeX. Infelizmente não conheço os editores de texto para LaTeX do Windows, mas sei que no Linux existe o <a href="https://kile.sourceforge.net">Kile - An Integrated LaTeX Environment</a> que possui essa opção. Isso apenas facilitaria o seu <code>Ctrl+C</code> e <code>Ctrl+V</code>, mas de modo geral, não é tão importante assim.</p>
 
 
+                <br>
+            </div>
+            
+                <div class="navigation">
+                    
+                    <div>
+                        <img class="icon" src="https://davidfonseca.com.br/img/back.svg" alt="back" />
+                        <a href="https://davidfonseca.com.br/blog/latex-para-quem-quer-terminar-o-tcc-em-um-m%C3%AAs-parte-1/">LaTeX para quem quer terminar o TCC em UM mês: Parte 1</a>
+                    </div>
+                    
+                    <div style="width: 100%;"></div>
+                    
+                </div>
+            
+            <br>
+            <div class="disqus">
+                <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'davidfonseca';
+    var disqus_identifier = 'https:\/\/davidfonseca.com.br\/blog\/latex-para-quem-quer-terminar-o-tcc-em-um-m%C3%AAs-parte-2\/';
+    var disqus_title = 'LaTeX para quem quer terminar o TCC em UM mês: Parte 2';
+    var disqus_url = 'https:\/\/davidfonseca.com.br\/blog\/latex-para-quem-quer-terminar-o-tcc-em-um-m%C3%AAs-parte-2\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
             </div>
         </div>
     </div>
 </section>
+
 <section class="footer">
     <div class="container">
         <div class="copyright">

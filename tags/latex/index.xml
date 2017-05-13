@@ -10,6 +10,193 @@
     <atom:link href="https://davidfonseca.com.br/tags/latex/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>LaTeX para quem quer terminar o TCC em UM mês: Parte 2</title>
+      <link>https://davidfonseca.com.br/blog/latex-para-quem-quer-terminar-o-tcc-em-um-m%C3%AAs-parte-2/</link>
+      <pubDate>Mon, 08 May 2017 20:30:35 -0300</pubDate>
+      
+      <guid>https://davidfonseca.com.br/blog/latex-para-quem-quer-terminar-o-tcc-em-um-m%C3%AAs-parte-2/</guid>
+      <description>
+
+&lt;h2 id=&#34;equações-matemáticas&#34;&gt;Equações Matemáticas&lt;/h2&gt;
+
+&lt;p&gt;No &lt;a href=&#34;https://davidfonseca.com.br/blog/latex-para-quem-quer-terminar-o-tcc-em-um-m%C3%AAs-parte-1/&#34;&gt;primeiro post&lt;/a&gt;, vocês tiveram o primeiro contato com o LaTeX. Conheceram o &lt;a href=&#34;https://pt.sharelatex.com&#34;&gt;ShareLaTeX&lt;/a&gt; e algumas formatações básicas do texto. Hoje, vamos aprender a mexer com as equações matemáticas, figuras e tabelas. Quem nunca teve uma tremenda dor de cabeça para editar todas aquelas fórmulas no MS Word? No LaTeX pode até ser pior, mas só no começo. Com o tempo você se acostumará e só vai querer usar essas fórmulas.&lt;/p&gt;
+
+&lt;h3 id=&#34;equações-na-linha&#34;&gt;Equações na linha&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-tex&#34;&gt;\chapter{Equações Matemáticas} % estamos aqui
+\section{Equação na linha}
+Podemos utilizar símbolos matemáticos enquanto escrevemos, como por exemplo: $\sum_{n=1}^x n^2$.
+No entanto, podemos atribuir o comando:  $\displaystyle\sum_{n=1}^{x} n^2$, para visualizá-las melhor.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Resultado:
+&lt;img src=&#34;https://davidfonseca.com.br/img/latex_img/eqlinha.png&#34; alt=&#34;eq linha&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Aqui temos um exemplo dos comandos somatório &lt;code&gt;\sum&lt;/code&gt;, sobrescrito &amp;ldquo;^&amp;rdquo; e subscrito &amp;ldquo;_&amp;rdquo;. Para incluir as equações no texto, enquanto estamos escrevendo, devemos colocá-las entre o cifrão ($). Desse modo, todos os &lt;a href=&#34;ftp://ftp.ams.org/ams/doc/amsmath/short-math-guide.pdf&#34;&gt;comandos matemáticos&lt;/a&gt; estarão disponíveis para nós. Esse foi um exemplo de três comandos matemáticos. O subscrito esteve entre chaves porque foi mais de um caractere, o mesmo poderia ocorrer com o subscrito. O comando &lt;code&gt;\displaystyle&lt;/code&gt; melhora a visualização de algumas fórmulas na linha, como essa do somatório.&lt;/p&gt;
+
+&lt;h3 id=&#34;ambiente-matemático&#34;&gt;Ambiente matemático&lt;/h3&gt;
+
+&lt;p&gt;Vamos supor que você introduzirá uma equação no seu texto e depois explicará cada variável.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-tex&#34;&gt;\section{Ambiente matemático} % Estamos aqui
+
+O coeficiente de Reynolds ($Re$) é um número adimensional muito utilizado na mecânica dos fluidos.
+Com ele, é possíve avaliar o regime do escoamento como laminar ou turbulento. É dado pela equação abaixo:
+\begin{equation} \label{eq:re}
+    Re = \frac{\rho V D}{\mu}
+\end{equation}
+Sendo que $\rho$ é a massa específica, $V$ a velocidade do fluido, $D$ o diâmetro e $mu$ a viscosidade cinemática.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Resultado:
+&lt;img src=&#34;https://davidfonseca.com.br/img/latex_img/reynolds.png&#34; alt=&#34;reyolds &#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Aqui está um exemplo de uso real das equações matemáticas, vamos por partes. Primeiro, observe que não há espaço entre o texto e o &lt;code&gt;\begin{equation}&lt;/code&gt;. Isso porque se houvesse o LaTeX criaria uma nova linha, deixando a sua equação ainda mais para baixo. O mesmo acontece no &lt;code&gt;end{equation}&lt;/code&gt;. Experimente criar esses espaços e compilar novamente. Segundo, criamos o ambiente &lt;code&gt;\begin{equation} ... \end{equation}&lt;/code&gt;, nele o LaTeX centraliza a fórmula e atribui um número que será na ordem crescente. Está (2.1) porque o estamos no capítulo 2 e essa foi a primeira equação. A próxima seria (2.2) e assim por diante.&lt;/p&gt;
+
+&lt;p&gt;Podemos mudar a numeração ao incluir o comando &lt;code&gt;\counterwithout{equation}{chapter}&lt;/code&gt; no seu preâmbulo, sugiro colocar na seção de comandos personalizados pelo usuário, entre as linhas 114~120. Assim, não incluirá mais o capítulo. Se o seu trabalho tem por volta de 5 páginas e poucas equações e mesmo assim você gostaria de uma capa, folha de rosto, sumário e referências bibliográficas nas normas, poderia usar esse template com essa opção.&lt;/p&gt;
+
+&lt;p&gt;Terceiro, colocamos um &lt;em&gt;label&lt;/em&gt; (rótulo) na fórmula, de modo que poderíamos referenciar ela mais tarde. Dentro do &lt;em&gt;label&lt;/em&gt; você pode incluir qualquer nome que desejar, eu particularmente gosto de ser coerente e por isso incluo um prefixo como &lt;em&gt;eq&lt;/em&gt;, mas isso é opcional. Podemos então referenciar as equações utilizando três comandos: &lt;code&gt;\ref{eq:re}&lt;/code&gt;, &lt;code&gt;\eqref{eq:re}&lt;/code&gt; ou o meu predileto &lt;code&gt;\autoref{eq:re}&lt;/code&gt;. O primeiro imprime o número, o segundo o número com um parênteses e o terceiro o nome da referencia mais o número, nesse caso &amp;ldquo;Equação (2.1)&amp;rdquo;. Se fosse um &lt;em&gt;label&lt;/em&gt; de uma Tabela ou Figura, ele incluiria os respectivos nomes.&lt;/p&gt;
+
+&lt;p&gt;Dentro do ambiente matemático, temos três comandos: duas letras gregas e uma fração. As letras gregas são escritas conforme são &amp;ldquo;faladas&amp;rdquo;. Imagine então, o comando da letra grega pi? Acertou &lt;code&gt;\pi&lt;/code&gt;!. A fração é dada por essa fórmula &lt;code&gt;\frac{numerador}{denominador}&lt;/code&gt; em que o numerador e denominador são separados entre essas chaves.&lt;/p&gt;
+
+&lt;p&gt;Aliás, o ambiente matemático pode ser inicializado com a seguinte sequência no ShareLaTeX: \beeq&amp;lt;CR&amp;gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-tex&#34;&gt;A fórmula de Bhaskara é dada por:
+\begin{equation}\label{eq:bhaskara}
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\end{equation}
+
+Calcule as raízes da equação $x^2 + 12x - 13 = 0$ com a \autoref{eq:bhaskara}.
+\begin{equation*}
+ x = \frac{-12 \pm \sqrt{12^2 - (4)(1)(-13)}}{(2)(1)} = \frac{-12 \pm \sqrt{196}}{2} = \frac{-12 \pm 14}{2} = -6 \pm 7
+\end{equation*}
+Logo, as raízes são: $x_1 = 1$ e $x_2 = -13$.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Aqui está outro exemplo e dessa vez utilizamos o ambiente &lt;em&gt;equation*&lt;/em&gt; para iniciar um ambiente matemático sem nenhum numeração. Assim também podemos escrever fórmulas centralizadas como o exemplo acima. O resultado:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://davidfonseca.com.br/img/latex_img/bhaskara.png&#34; alt=&#34;bhaskara&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;O comando &lt;code&gt;\sqrt{}&lt;/code&gt; e &lt;code&gt;\pm&lt;/code&gt; significam &lt;em&gt;SQuareRooT&lt;/em&gt; (raíz quadradra) e &lt;em&gt;plus-minus&lt;/em&gt; (mais ou menos).&lt;/p&gt;
+
+&lt;h3 id=&#34;para-fórmulas-complicadas-e-aprendizado&#34;&gt;Para fórmulas complicadas e aprendizado&lt;/h3&gt;
+
+&lt;p&gt;Gostaria que vocês visitassem o &lt;a href=&#34;https://www.codecogs.com/latex/eqneditor.php&#34;&gt;CodeCogs&lt;/a&gt;, que é um editor online para equações matemáticas basedo no LaTeX. Nele vocês podem brincar à vontade e verificar se a fórmula está como queira. O &lt;em&gt;feedback&lt;/em&gt; lá é imediato, de modo que podemos verificar se a sua equação está correta ou não. Junto com o &lt;a href=&#34;ftp://ftp.ams.org/ams/doc/amsmath/short-math-guide.pdf&#34;&gt;Short Math Guide for LaTeX&lt;/a&gt;, vocês têm praticamente tudo para tirar as suas dúvidas.&lt;/p&gt;
+
+&lt;h2 id=&#34;figuras&#34;&gt;Figuras&lt;/h2&gt;
+
+&lt;p&gt;As figuras são tão simples nos editores convencionais. Basta arrastar para o arquivo e pronto! Sua figura está lá, ajeita um pouco com o mouse e tudo fica direitinho. No LaTeX implementar figuras é um pouquinho complicado, mas vamos lá:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-tex&#34;&gt;\begin{figure}[!htb]
+ \centering
+ \caption{Título}
+ \includegraphics[scale=0.5]{abntex2-modelo-img-grafico.pdf}
+ \legend{Fonte: \citeonline[p. ~24]{araujo2012}}
+\end{figure}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Criamos um novo ambiente chamado &lt;em&gt;figure&lt;/em&gt;, nele o LaTeX (junto com a classe abntex2) começará a numerar as suas figuras. E como ele sabe que isso é uma figura, também criará automaticamente a Lista de Figuras. No caso, a gente retirou essa opção para ficar um trabalho mais simples, até porque, isso é opcional pelas normas da ABNT. Dentro desse ambiente, estamos centralizando tudo, a imagem, título e legenda com a comando &lt;code&gt;\centering&lt;/code&gt;. O comando &lt;code&gt;\caption{}&lt;/code&gt; cria o título da sua imagem, o comando &lt;code&gt;\includegraphics[opções]{caminho_da_imagem}&lt;/code&gt; inclui uma figura nova, nesse caso colocamos já uma imagem que está no diretório raiz do projeto. Outros caminhos também são possíveis, como veremos adiante.&lt;/p&gt;
+
+&lt;p&gt;Utilizamos a opção &lt;em&gt;scale&lt;/em&gt; com o dimensionamento da imagem em 50%, calhou que deu certo, mas normalmente utilizo a opção &lt;em&gt;width=0.95\textwidth&lt;/em&gt; (dentro dos colchetes). Pois assim temos uma ideia melhor de como a imagem vai ser preenchida no texto. Se minha imagem tem uma altura muito maior que a largura, então colocaria um &lt;em&gt;width=0.4\textwidth&lt;/em&gt; por exemplo, com a prática vocês vão pegando o jeito.&lt;/p&gt;
+
+&lt;p&gt;Pela norma, precisamos sempre colocar a fonte nas imagens, mesmo que seja uma imagem de sua autoria. Nesse caso, deverá ser colocado assim: &amp;ldquo;Figura produzida pelo autor.&amp;rdquo;, ou algo semelhante. Também foi utilizado a citação direta do autor com o comando &lt;code&gt;\citeonline{bibkey}&lt;/code&gt;, mas isso será falado no próximo post.&lt;/p&gt;
+
+&lt;p&gt;E se quisermos colocar figuras lado a lado ? Também é possível com o pacote &lt;em&gt;caption&lt;/em&gt;, que permite utilizar o ambiente &lt;em&gt;subfigure&lt;/em&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-tex&#34;&gt;\begin{figure}[htb]
+	\centering
+        \caption{\label{fig:16-13} Uso de aletas para aumentar a transferência de calor de uma parede plana}
+        \begin{subfigure}[t]{0.3\textwidth}
+            \centering
+            \includegraphics[width=0.95\textwidth]{img/fig16-13a.png}
+            \caption{Superfície sem aletas}\label{fig:16-13a}
+        \end{subfigure}
+    	\hspace{10mm}
+        \begin{subfigure}[t]{0.3\textwidth}
+            \centering
+            \includegraphics[width=0.95\textwidth]{img/fig16-13b.png}
+            \caption{Superfície aletada}\label{fig:16-13b}
+	\end{subfigure}
+    \legend{Fonte: \citeonline{shapiro}}
+\end{figure}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Resultado:
+&lt;img src=&#34;https://davidfonseca.com.br/img/latex_img/ladolado.png&#34; alt=&#34;lado a lado&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Temos um comando gigante, não é? Em alguns editores de texto, existe uma função chamada de &lt;em&gt;snippet&lt;/em&gt;. Essa função permite replicar uma parte do seu código com uma simples referência. No meu, apenas digito &lt;em&gt;sub&lt;TAB&gt;&lt;/em&gt; que esse código enorme já abre, além disso conforme vou editando, continuo escrevendo e usando o tab para ir apenas nas partes em que é necessário editar, veja nesse exemplo:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://davidfonseca.com.br/img/latex_img/snip.gif&#34; alt=&#34;snip gif&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ok, vamos entender o código agora. Veja que temos o usual &lt;code&gt;\caption&lt;/code&gt; logo depois do &lt;code&gt;\centering&lt;/code&gt; para centralizar toda a imagem. Nesse caso temos mais duas subimagens e perceba que defini o tamanho como &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt; da largura do papel. Poderíamos ter colocado 0.5\textwidth, mas como sei que essa imagem tem uma altura maior que a largura, ficaria muito grande. Nesse caso, é possível incluir uma terceira imagem já que dividi o tamanho em &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt;, mas só coloquei duas. Por isso que adicionei um `\hspace{10mm} no meio das duas figuras para não ficar muito colado. Dentro de cada subimagem também as preenchi com quase todo o tamnho disponível para elas, com 0.95\textwidht, essa opção normalmente não precisa mudar. Por fim temos a fonte das duas imagens e um &lt;em&gt;label&lt;/em&gt; para cada subimagem e imagem.&lt;/p&gt;
+
+&lt;h2 id=&#34;tabelas&#34;&gt;Tabelas&lt;/h2&gt;
+
+&lt;p&gt;Criar tabela é bem chatinho no LaTeX. Veja o comando para criar uma tabela tão simples:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-tex&#34;&gt;\begin{table}[!htb]
+    \centering
+    \caption{Dados dos alunos} \label{tab:teste}
+    \begin{tabular}{lll}
+        \hline
+        Nome &amp;amp; Sobrenome &amp;amp; Idade \\
+        \hline
+        David &amp;amp; Fonseca &amp;amp; 25 \\
+        Fulano &amp;amp; deTal &amp;amp; 35 \\
+        \hline
+    \end{tabular}
+    \legend{Fonte: Tabela produzida pelos autores}
+\end{table}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Resultado:
+&lt;img src=&#34;https://davidfonseca.com.br/img/latex_img/dados.png&#34; alt=&#34;dados&#34; style=&#34;width: 450px;&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;O ambiente &lt;em&gt;table&lt;/em&gt; é apenas para indicar que isso será uma tabela e e criar aquela lista de tabelas que não foi incluso nesse &lt;em&gt;template&lt;/em&gt;. Temos o usual &lt;em&gt;caption&lt;/em&gt; e &lt;em&gt;legend&lt;/em&gt;, igual em figuras, mas a tabela em si começa no ambiente &lt;em&gt;tabular&lt;/em&gt;. Vamos entendê-lo. Temos três colunas, por isso temos três caracteres &lt;em&gt;{lll}&lt;/em&gt; dentro das chaves. Esses caracteres definem o alinhamento do texto na coluna, que no caso estão alinhadas pela esquerda (&lt;em&gt;l&lt;/em&gt; de &lt;em&gt;left&lt;/em&gt;), para alinhar no centro, digite &lt;em&gt;c&lt;/em&gt; e para a direita, digite &lt;em&gt;r&lt;/em&gt;. Experimente colocar {lcr} e compilar novamente. Para adicionar uma nova coluna, basta adicionar mais um caractere com o respectivo alinhamento.&lt;/p&gt;
+
+&lt;p&gt;O comando &lt;code&gt;\hline&lt;/code&gt; serve para criar uma linha horizontal, mas também temos o &lt;code&gt;\toprule&lt;/code&gt; ou &lt;code&gt;\bottomrule&lt;/code&gt; para criar uma linha um pouco mais grossa no topo e no fundo da tabela. Vai de preferência de cada um. Lembra dos caracteres especiais do &lt;a href=&#34;https://davidfonseca.com.br/blog/latex-para-quem-quer-terminar-o-tcc-em-um-m%C3%AAs-parte-1/&#34;&gt;primeiro post&lt;/a&gt;? O &lt;strong&gt;&amp;amp;&lt;/strong&gt; dentro do ambiente &lt;em&gt;tabular&lt;/em&gt; serve para separar as colunas. Assim, vai digitando e separando-as pelo &lt;strong&gt;&amp;amp;&lt;/strong&gt;. Para encerrar a linha, temos o comando &lt;code&gt;\\&lt;/code&gt; é a mesma coisa que &lt;code&gt;\newline&lt;/code&gt;. Ou seja, ele pula para a próxima linha da tabela. Pronto, criamos uma tabela simples! Essas partes o LaTeX deixam a desejar, mas existem muitas formas de transformar as suas tabelas muito mais bonitas do que os editores convencionais. Veja &lt;a href=&#34;https://tex.stackexchange.com/questions/112343/beautiful-table-samples&#34;&gt;esse&lt;/a&gt; e &lt;a href=&#34;https://www.inf.ethz.ch/personal/markusp/teaching/guides/guide-tables.pdf&#34;&gt;esse outro&lt;/a&gt; linha. Uma vez que são apenas códigos, basta copiar e colar no seu arquivo que terá o mesmo efeito.&lt;/p&gt;
+
+&lt;p&gt;Para finalizar, uma tabela com duas colunas dentro de uma coluna:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-tex&#34;&gt;\begin{table}[!htb]
+    \centering
+    \caption{Rugosidade para diferentes Materiais}
+    \begin{tabular}{l l l} \toprule
+	&amp;amp; \multicolumn{2}{c}{Rugosidade, \textit{e}} \\
+	\cline{2-3}
+	Tubo  &amp;amp; Pés &amp;amp; Milímetros \\
+	\hline
+	Aço rebitado &amp;amp; 0,003-0,03 &amp;amp; 0,9-9 \\
+	Concreto &amp;amp; 0,001-0,01 &amp;amp; 0,3-3 \\
+	Madeira &amp;amp; 0,0006-0,003 &amp;amp; 0,2-0,9 \\
+	Ferro Fundido &amp;amp; 0,00085 &amp;amp; 0,26 \\
+	Ferro Galvanizado &amp;amp; 0,0005 &amp;amp; 0,15 \\
+	Ferro fundido asfaltado &amp;amp; 0,0004 &amp;amp; 0,12 \\
+	Aço comercial ou ferro forjado &amp;amp; 0,00015 &amp;amp; 0,046 \\
+	\bottomrule
+    \end{tabular}
+    \legend{Fonte: \citeonline{fox}.}
+\end{table}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Resultado:
+&lt;img src=&#34;https://davidfonseca.com.br/img/latex_img/tabelamultipla.png&#34; alt=&#34;tabela multipla&#34; style=&#34;width: 500px;&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;Se você quisesse escrever &amp;ldquo;Rugosidade, e&amp;rdquo; entre a segunda e terceira coluna encontraria problemas. A solução para isso é criar uma &amp;ldquo;multicoluna&amp;rdquo; que ocupará esse papel e junto com ela, uma linha que apenas cobre essas duas colunas. Vamos lá, primeiro observe que não temos nada na primeira coluna da primeira linha, por isso já inicio essa linha mudando para a segunda coluna com o &lt;strong&gt;&amp;amp;&lt;/strong&gt;. Aqui criamos a coluna múltipla, que ocupará 2 colunas e que ficará centralizada, por isso o {2}{c}. Depois preenchemos com o que queremos nessa coluna. Pulo a linha e inicio o &lt;code&gt;cline{2-3}&lt;/code&gt;, que apenas criará uma linha na coluna 2 e 3. Fechou! O resto é igualzinho a tabela anterior. Adicionei o &lt;code&gt;\toprule&lt;/code&gt; e &lt;code&gt;\bottomrule&lt;/code&gt; também para vocês notarem a diferença.&lt;/p&gt;
+
+&lt;h3 id=&#34;sobre-o-comando-label&#34;&gt;Sobre o comando &lt;strong&gt;\label{}&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Esse comando você deve usar e abusar dele, porque é justamente com ele que torna a editação do LaTeX prazerosa de usar. Toda vez que criar um Capítulo, Seção, Equação, Figura ou Tabela que será referenciado ao longo do texto, use o &lt;code&gt;\label{}&lt;/code&gt; e referencie com &lt;code&gt;\ref{}&lt;/code&gt; ou &lt;code&gt;\autoref{}&lt;/code&gt;. Desse modo, é possível retirar um capítulo inteiro do seu texto que o LaTeX automaticamente reorganizará a numeração dos Capítulos, Seções, Equações, Figuras e Tabelas. Assim, todas as referências com o &lt;code&gt;\label{}&lt;/code&gt; estarão corretas. Quando vocês sentirem o poder do &lt;code&gt;\label{}&lt;/code&gt;, vão entender porque escrever no LaTeX é tão prazeroso.&lt;/p&gt;
+
+&lt;h2 id=&#34;conclusão-da-parte-2&#34;&gt;Conclusão da parte 2&lt;/h2&gt;
+
+&lt;p&gt;Bom, com isso já temos uma boa bagagem do LaTeX. Sabemos organizar a dissertação com capítulos e seções de modo que o LaTeX criará o sumário. Também aprendemos um pouco de equações matemáticas que infelizmente só pude mostrar o básico. Só com o tempo para aprender de fato esse universo. Também aprendemos a incluir Figuras e Tabelas. Fora isso, só vai faltar as referências bibliográficas para completar essa serie de posts sobre &lt;em&gt;comandos fundamentais do LaTeX&lt;/em&gt;, ou em outras palavras, &amp;ldquo;como formatar o seu TCC faltando 1 mês&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;Obs:  Utilizo o &lt;em&gt;snippet&lt;/em&gt; para praticamente qualquer comando do LaTeX. Infelizmente não conheço os editores de texto para LaTeX do Windows, mas sei que no Linux existe o &lt;a href=&#34;https://kile.sourceforge.net&#34;&gt;Kile - An Integrated LaTeX Environment&lt;/a&gt; que possui essa opção. Isso apenas facilitaria o seu &lt;code&gt;Ctrl+C&lt;/code&gt; e &lt;code&gt;Ctrl+V&lt;/code&gt;, mas de modo geral, não é tão importante assim.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>LaTeX para quem quer terminar o TCC em UM mês: Parte 1</title>
       <link>https://davidfonseca.com.br/blog/latex-para-quem-quer-terminar-o-tcc-em-um-m%C3%AAs-parte-1/</link>
       <pubDate>Wed, 03 May 2017 18:34:15 -0300</pubDate>
@@ -103,7 +290,6 @@
 \chapter{Equações matemáticas}
 \section{Equação na linha}
 \section{Ambiente matemático}
-\section{Espaçamento matemático}
 
 \chapter{Figuras e tabelas}
 \section{Figura lado a lado}
@@ -148,7 +334,7 @@ Se está em \emph{itálico vai \emph{transformar em normal}}
 
 &lt;p&gt;O mesmo vale para &lt;code&gt;\emp&amp;lt;TAB&amp;gt;&lt;/code&gt; e qualquer  outro comando deste post.&lt;/p&gt;
 
-&lt;h3 id=&#34;listas&#34;&gt;Listas&lt;/h3&gt;
+&lt;h4 id=&#34;listas&#34;&gt;Listas&lt;/h4&gt;
 
 &lt;p&gt;Como criar aqueles itens de pontinhos pretos ou itens numeradas? No LaTeX, eles são chamados de listas.&lt;/p&gt;
 
@@ -192,7 +378,7 @@ Se está em \emph{itálico vai \emph{transformar em normal}}
 
 &lt;p&gt;Listas fazem parte das atividades diárias e são facilmente criadas em editores de texto comuns, sobretudo em &lt;em&gt;slides&lt;/em&gt;. No LaTEX, pense no atalho da função autocompletar para digitar a sequência acima.&lt;/p&gt;
 
-&lt;h3 id=&#34;símbolos-especiais&#34;&gt;Símbolos especiais&lt;/h3&gt;
+&lt;h4 id=&#34;símbolos-especiais&#34;&gt;Símbolos especiais&lt;/h4&gt;
 
 &lt;p&gt;Existem alguns caracteres que você não conseguirá escrever porque são considerados símbolos especiais, isto é, fazem parte da linguagem TeX para o compilador reconhecer algumas funções. Já vimos a porcentagem &lt;code&gt;%&lt;/code&gt; para inserir comentários, mas existem outros como estes:&lt;/p&gt;
 
@@ -224,7 +410,7 @@ Se está em \emph{itálico vai \emph{transformar em normal}}
 
 &lt;p&gt;Caso precise digitá-los em seu texto, basta inserir a contrabarra &lt;code&gt;\&lt;/code&gt; e o carácter especial.&lt;/p&gt;
 
-&lt;h3 id=&#34;notas-de-rodapé&#34;&gt;Notas de rodapé&lt;/h3&gt;
+&lt;h4 id=&#34;notas-de-rodapé&#34;&gt;Notas de rodapé&lt;/h4&gt;
 
 &lt;p&gt;Notas de rodapé também são simples de serem inseridas no LaTeX. Utilizando o comando &lt;code&gt;\footnote{}&lt;/code&gt; no texto, será inserida uma nota de rodapé ao final da página. Por exemplo:&lt;/p&gt;
 
