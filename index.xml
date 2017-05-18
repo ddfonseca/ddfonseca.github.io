@@ -7,15 +7,115 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2017 David Fonseca</copyright>
-    <lastBuildDate>Mon, 08 May 2017 20:30:35 -0300</lastBuildDate>
+    <lastBuildDate>Wed, 17 May 2017 21:40:09 -0300</lastBuildDate>
     <atom:link href="https://davidfonseca.com.br/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>LaTeX para quem quer terminar o TCC em UM mês: Parte 2</title>
-      <link>https://davidfonseca.com.br/blog/latex-para-quem-quer-terminar-o-tcc-em-um-m%C3%AAs-parte-2/</link>
-      <pubDate>Mon, 08 May 2017 20:30:35 -0300</pubDate>
+      <title>LaTeX para quem quer terminar o TCC em UM mês: Parte 3 de 3</title>
+      <link>https://davidfonseca.com.br/blog/latex-para-quem-quer-terminar-o-tcc-em-um-m%C3%AAs-parte-3-de-3/</link>
+      <pubDate>Wed, 17 May 2017 21:40:09 -0300</pubDate>
       
-      <guid>https://davidfonseca.com.br/blog/latex-para-quem-quer-terminar-o-tcc-em-um-m%C3%AAs-parte-2/</guid>
+      <guid>https://davidfonseca.com.br/blog/latex-para-quem-quer-terminar-o-tcc-em-um-m%C3%AAs-parte-3-de-3/</guid>
+      <description>
+
+&lt;h2 id=&#34;referências-bibliográficas&#34;&gt;Referências Bibliográficas&lt;/h2&gt;
+
+&lt;p&gt;Certamente o maior motivo pelo qual eu quis utilizar o LaTeX para o meu TCC foi essa possibilidade de lidar as referências bibliográficas de acordo com as normas da ABNT. A norma é bem confusa e tem muitos detalhes para cada tipo de trabalho. Felizmente, existe dois pacotes para lidarmos com as referências: o &lt;em&gt;abntex2cite&lt;/em&gt; e o &lt;em&gt;biblatex-abnt&lt;/em&gt;. As duas são muito boas e tem suas particularidades. A segunda está tendo mais atualizações (última atualização foi dia 17 de Março de 2017), enquanto a primeira menos (última atualização 26 de Fevereiro de 2016). Utilizaremos o &lt;em&gt;abntex2cite&lt;/em&gt; porque até hoje não encontrei nenhum problema que me fez migrar para o &lt;em&gt;biblatex-abnt&lt;/em&gt;. Contudo se você observar o &lt;a href=&#34;https://groups.google.com/forum/#!forum/abntex2&#34;&gt;Grupo abnTeX2&lt;/a&gt;, perceberá que a maioria das dúvidas referentes a problemas com a classe &lt;em&gt;abntex2cite&lt;/em&gt; podem ser resolvidas com o &lt;em&gt;biblatex-abnt&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;cuidado-normas-nebulosas&#34;&gt;Cuidado: normas nebulosas!&lt;/h3&gt;
+
+&lt;p&gt;Os próprios criadores da classe abnTeX2 comentam na seção 3.2 da &lt;a href=&#34;http://mirror.unl.edu/ctan/macros/latex/contrib/abntex2/doc/abntex2cite-alf.pdf&#34;&gt;documentação da classe&lt;/a&gt;, que as normas são confusas. Inclusive o próprio nome &lt;strong&gt;abnTeX2&lt;/strong&gt; não vem de ABNT e sim de &lt;em&gt;ABsurd Norms for TeX&lt;/em&gt; (&lt;a href=&#34;http://www.abntex.net.br/&#34;&gt;confira&lt;/a&gt;). Veja o que contém nessa seção:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Nós elaboramos os estilos debruçados diretamente sobre os originais da ABNT e as seguimos escrupulosamente.  Mas não se iluda!  O que a sua coordenação de pós-graduação, ou orientador, ou chefe etc., entendem por ‘normas ABNT’ pode não ter qualquer vínculo com a realidade. Por isso não garantimos que ao usar os estilos do abnTeX você esteja em conformidade com as normas da sua instituição ou empresa.&lt;/p&gt;
+
+&lt;p&gt;Um exemplo clássico é o sistema de chamada numérico. Embora &lt;em&gt;todas&lt;/em&gt; as ‘normas’ da ABNT (ABNT, 1988; ABNT, 2000; ABNT, 2002b, 2002b; ABNT, 2001; ABNT, 2002a) ‘autorizem’ seu uso, a maioria das instituições, orientadores, membros de banca, revisores de artigo&amp;hellip; dirão que isso não é ABNT. Acredite se quiser.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Dito isso, vamos ao trabalho!&lt;/p&gt;
+
+&lt;p&gt;Na linha 26 do comandos_fundamentais.tex (seu projeto atual), terá a seguinte linha:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-tex&#34;&gt;\usepackage[alf]{abntex2cite}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Aqui estou utilizando o pacote &lt;em&gt;abntex2cite&lt;/em&gt; com a opção &lt;strong&gt;alf&lt;/strong&gt;. Por padrão vamos utilzar o sistema autor data que maioria das instituições entendem como norma da ABNT, do contrário seria o sistema numérico, &lt;strong&gt;num&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ao lado esquerdo do seu &lt;a href=&#34;https://www.sharelatex.com/project/590fc24f53edd69b2d6949fa&#34;&gt;projeto&lt;/a&gt;, estará um arquivo chamado &lt;strong&gt;bibliografia.bib&lt;/strong&gt;. É nesse arquivo que todas as suas referências bibliográficas devem estar. Clique nele, você verá que já está incluso as referências mais frequentes, como livro, artigo, mestrado e doutorado. Para entender o que cada formato significa, &lt;a href=&#34;https://pt.wikipedia.org/wiki/BibTeX&#34;&gt;veja esse link&lt;/a&gt;.  Esses formatos não tem muito mistério não, mas vamos pegar um exemplo e explicar cada passo (esse não tem cor maneirinha):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-tex&#34;&gt;@book{shapiro,
+author={Howard N. Shapiro and Michael J. Moran and Bruce R. Munson and David P. DeWitt},
+address={New York},
+title={Introduction to thermal systems engineering},
+subtitle={thermodynamics, fluid mechanics, and heat transfer},
+isbn={9780471204909},
+lccn={2002728440},
+year={2003},
+publisher={John Wiley \&amp;amp; Sons, Inc},
+} % importante
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;O formato começa com &lt;strong&gt;@&lt;/strong&gt; seguida do tipo do trabalho, nesse caso é um livro. A primeira palavra (shapiro) é chamada de &lt;em&gt;bibkey&lt;/em&gt;, que é exatamente o texto que você digitará no LaTeX. Existem duas formas de citar as referências, o &lt;code&gt;\cite{bibkey}&lt;/code&gt; e &lt;code&gt;\citeonline{bibkey}&lt;/code&gt; que falarei mais adiante. Em seguida, temos algumas entradas como &lt;em&gt;author&lt;/em&gt;, &lt;em&gt;address&lt;/em&gt;, &lt;em&gt;title&lt;/em&gt;, etc. Essas entradas não precisam estar nessa ordem, mas em qualquer uma. Nem todas são obrigatórias, como &lt;em&gt;isbn&lt;/em&gt; e &lt;em&gt;lccn&lt;/em&gt;. Não se preocupa muito com isso não, o que você mais vai fazer é procurar algum exemplo pronto &lt;a href=&#34;http://linorg.usp.br/CTAN/macros/latex/contrib/abntex2/doc/abntex2cite.pdf&#34;&gt;desse link&lt;/a&gt; ou &lt;a href=&#34;https://github.com/abntex/biblatex-abnt/blob/master/doc/biblatex-abnt.bib&#34;&gt;desse outro link&lt;/a&gt; e apenas reescrever. Dê um &lt;code&gt;ctrl+f book&lt;/code&gt; para ver alguns exemplos.&lt;/p&gt;
+
+&lt;p&gt;Quando for digitar mais de um autor, deve separá-los todos por &amp;ldquo;&lt;strong&gt;and&lt;/strong&gt;&amp;rdquo; e não com a usual vírgula e &amp;ldquo;and&amp;rdquo; no final. Caso precise digitar algum texto em caixa alta, colocá-los entre chaves {}, por exemplo &amp;ldquo;title={Volume of Fluid ({VOF}) Method for the Dynamics of Free Boundaries}&amp;rdquo;. Caso precise de algum caractere especial como &lt;strong&gt;&amp;amp;&lt;/strong&gt;, utilizar o comando de escape \. Veja que todas as entradas terminam com uma chave e vírgula &amp;ldquo;},&amp;rdquo; e não esqueça da última chave para fechar o formato. O resto é autoexplicativo.&lt;/p&gt;
+
+&lt;p&gt;Depois que você preencher todas as entradas, está na hora de citar. No arquivo comandos_fundamentais.tex, lá no final estará o comando &lt;code&gt;\bibliography{bibliografia}&lt;/code&gt; que é o nome desse arquivo sem a extensão &lt;em&gt;.bib&lt;/em&gt;. O abntex2 criará uma página chamada Referências e nele colocará toda sas referências que você &lt;strong&gt;citar&lt;/strong&gt; no texto. As vezes as pessoas se confundem que só porque o arquivo &lt;em&gt;bibliografia.bib&lt;/em&gt; está cheio de referências, que automaticamente elas estarão inseridas no trabalho. Só estarão inseridas, caso você cite de forma direta ou indiretamente no texto, que veremos agora.&lt;/p&gt;
+
+&lt;h3 id=&#34;citações-direta-e-indireta&#34;&gt;Citações direta e indireta&lt;/h3&gt;
+
+&lt;p&gt;Usualmente utiliza-se o &lt;code&gt;\citeonline{bibkey}&lt;/code&gt; para citações diretas e &lt;code&gt;\cite{bibkey}&lt;/code&gt; para citações indiretas. O primeiro criará um comando &amp;ldquo;Autor (Data)&amp;rdquo;, por exemplo: Janna (1994). O segundo, &amp;ldquo;(AUTOR, DATA)&amp;rdquo;, por exemplo: (JANNA, 1994). Para mais informações veja o final &lt;a href=&#34;https://davidfonseca.com.br/pdf/comandos_fundamentais.pdf&#34;&gt;desse arquivo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Exemplo de citação direta:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-tex&#34;&gt;\citeonline{janna} define um fluido como toda substância que ao sofrer uma tensão de
+cisalhamento deforma continuamente.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Resultado: Janna (1994) define um fluido como toda substância que ao sofrer uma tensão de cisalhamento deforma continuamente.&lt;/p&gt;
+
+&lt;p&gt;É possível incluir a página na citação, por exemplo: &lt;code&gt;\citeonline[p. ~1]{janna}&lt;/code&gt;. O &lt;em&gt;~&lt;/em&gt;  serve para que esse texto permaneça junto (p. n°) ao citar no texto, que ele não caia para a próxima linha caso esteja no final de uma frase.&lt;/p&gt;
+
+&lt;h3 id=&#34;referência-citada-por-outra-referência-apud&#34;&gt;Referência citada por outra referência (apud)&lt;/h3&gt;
+
+&lt;p&gt;Caso você deseje citar uma referência que foi previamente citada pelo autor que você leu, você deve utilizar o &lt;code&gt;\apud&lt;/code&gt; e &lt;code&gt;\apudonline&lt;/code&gt;. Esse comando funciona assim:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-tex&#34;&gt;\apud{autor_indireto}{autor_direto}
+\apudonline{autor_indireto}{autor_direto}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Sendo que &lt;em&gt;autor_indireto&lt;/em&gt; e &lt;em&gt;autor_direto&lt;/em&gt; são &lt;strong&gt;bibkeys&lt;/strong&gt; definidas no seu arquivo &lt;em&gt;.bib&lt;/em&gt;. Então caso você queira citar dessa forma, ainda assim precisará incluir todas as entradas dos dois &lt;em&gt;bibkeys&lt;/em&gt;. Esses comandos funcionam de forma semelhante ao &lt;code&gt;\cite{}&lt;/code&gt;, o primeiro cita indiretamente e o segundo diretamente.&lt;/p&gt;
+
+&lt;h2 id=&#34;fim-dessa-série&#34;&gt;Fim dessa série&lt;/h2&gt;
+
+&lt;p&gt;O LaTeX é um mundo, existe muita coisa que poderíamos fazer com ele. Apenas falei dos principais comandos e configurações para fazer um trabalho nas normas. Veja esse &lt;a href=&#34;https://tex.stackexchange.com/questions/1319/showcase-of-beautiful-typography-done-in-tex-friends&#34;&gt;link das maravilhas&lt;/a&gt; que podem ser feitas no LaTeX.&lt;/p&gt;
+
+&lt;p&gt;Para quem nunca programou, esse modelo de escrever pode ser um pouco intimidador. Mas acredite, é apenas uma questão de compreender a estrutura dos comandos que a coisa flui.&lt;/p&gt;
+
+&lt;h3 id=&#34;onde-encontrar-ajuda&#34;&gt;Onde encontrar ajuda?&lt;/h3&gt;
+
+&lt;p&gt;E agora? Se precisar de alguma ajuda, você pode comentar aí nos comentários ou procurar se a sua dúvida já foi respondida nos seguintes links:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://groups.google.com/forum/#!forum/abntex2&#34;&gt;Grupo abnTeX2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://groups.google.com/forum/#!forum/latex-br&#34;&gt;Grupo LaTeX-BR&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/abntex/abntex2/wiki&#34;&gt;Wiki abnTeX2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://tex.stackexchange.com/&#34;&gt;TeX StackExchange&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Apesar dos dois primeiros links serem de um grupo da Google, você deve estar pensando: ninguém usa esses grupos! Errado, porque quem está inscrito no grupo recebe as notificações por e-mail, aí as pessoas respondem. A frequência não é tão alta, mas existe atividade de pelo menos uma pergunta por semana. A última foi dia 15 de Maio de 2017.&lt;/p&gt;
+
+&lt;p&gt;Por fim, caso queira apostilas bem completas sobre LaTeX, basta digitar no Google: &lt;a href=&#34;https://www.google.com.br/search?q=latex+filetype:pdf&amp;amp;ie=utf-8&amp;amp;oe=utf-8&amp;amp;client=firefox-b-ab&amp;amp;gws_rd=cr&amp;amp;ei=nhgeWYWsC8L9wQTh_JDIDQ#safe=active&amp;amp;q=latex+filetype:pdf&#34;&gt;latex filetype:pdf&lt;/a&gt;, que vocês encontrarão diversas apostilas, mini cursos sobre LaTeX.&lt;/p&gt;
+
+&lt;p&gt;Valeu!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>LaTeX para quem quer terminar o TCC em UM mês: Parte 2 de 3</title>
+      <link>https://davidfonseca.com.br/blog/latex-para-quem-quer-terminar-o-tcc-em-um-m%C3%AAs-parte-2-de-3/</link>
+      <pubDate>Sat, 13 May 2017 20:30:35 -0300</pubDate>
+      
+      <guid>https://davidfonseca.com.br/blog/latex-para-quem-quer-terminar-o-tcc-em-um-m%C3%AAs-parte-2-de-3/</guid>
       <description>
 
 &lt;h2 id=&#34;equações-matemáticas&#34;&gt;Equações Matemáticas&lt;/h2&gt;
@@ -33,7 +133,7 @@ No entanto, podemos atribuir o comando:  $\displaystyle\sum_{n=1}^{x} n^2$, para
 &lt;p&gt;Resultado:
 &lt;img src=&#34;https://davidfonseca.com.br/img/latex_img/eqlinha.png&#34; alt=&#34;eq linha&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Aqui temos um exemplo dos comandos somatório &lt;code&gt;\sum&lt;/code&gt;, sobrescrito &amp;ldquo;^&amp;rdquo; e subscrito &amp;ldquo;_&amp;rdquo;. Para incluir as equações no texto, enquanto estamos escrevendo, devemos colocá-las entre o cifrão ($). Desse modo, todos os &lt;a href=&#34;ftp://ftp.ams.org/ams/doc/amsmath/short-math-guide.pdf&#34;&gt;comandos matemáticos&lt;/a&gt; estarão disponíveis para a gente. Esse foi um exemplo de três comandos matemáticos. O subscrito esteve entre chaves porque foi mais de um caractere, o mesmo poderia ocorrer com o subscrito. O comando &lt;code&gt;\displaystyle&lt;/code&gt; melhora a visualização de algumas fórmulas na linha, como essa do somatório.&lt;/p&gt;
+&lt;p&gt;Aqui temos um exemplo dos comandos somatório &lt;code&gt;\sum&lt;/code&gt;, sobrescrito &amp;ldquo;^&amp;rdquo; e subscrito &amp;ldquo;_&amp;rdquo;. Para incluir as equações no texto, enquanto estamos escrevendo, devemos colocá-las entre o cifrão ($). Desse modo, todos os &lt;a href=&#34;https://davidfonseca.com.br/pdf/short-math-guide.pdf&#34;&gt;comandos matemáticos&lt;/a&gt; estarão disponíveis para a gente. Esse foi um exemplo de três comandos matemáticos. O subscrito esteve entre chaves porque foi mais de um caractere, o mesmo poderia ocorrer com o subscrito. O comando &lt;code&gt;\displaystyle&lt;/code&gt; melhora a visualização de algumas fórmulas na linha, como essa do somatório.&lt;/p&gt;
 
 &lt;h3 id=&#34;ambiente-matemático&#34;&gt;Ambiente matemático&lt;/h3&gt;
 
@@ -83,7 +183,7 @@ Logo, as raízes são: $x_1 = 1$ e $x_2 = -13$.
 
 &lt;h3 id=&#34;para-fórmulas-complicadas-e-aprendizado&#34;&gt;Para fórmulas complicadas e aprendizado&lt;/h3&gt;
 
-&lt;p&gt;Gostaria que vocês visitassem o &lt;a href=&#34;https://www.codecogs.com/latex/eqneditor.php&#34;&gt;CodeCogs&lt;/a&gt;, que é um editor online para equações matemáticas basedo no LaTeX. Nele vocês podem brincar à vontade e verificar se a fórmula está como queiram. O &lt;em&gt;feedback&lt;/em&gt; lá é imediato, de modo que podemos verificar se a sua equação está correta ou não. Junto com o &lt;a href=&#34;ftp://ftp.ams.org/ams/doc/amsmath/short-math-guide.pdf&#34;&gt;Short Math Guide for LaTeX&lt;/a&gt;, vocês têm praticamente tudo para tirar as suas dúvidas.&lt;/p&gt;
+&lt;p&gt;Gostaria que vocês visitassem o &lt;a href=&#34;https://www.codecogs.com/latex/eqneditor.php&#34;&gt;CodeCogs&lt;/a&gt;, que é um editor online para equações matemáticas basedo no LaTeX. Nele vocês podem brincar à vontade e verificar se a fórmula está como queiram. O &lt;em&gt;feedback&lt;/em&gt; lá é imediato, de modo que podemos verificar se a sua equação está correta ou não. Junto com o &lt;a href=&#34;https://davidfonseca.com.br/pdf/short-math-guide.pdf&#34;&gt;Short Math Guide for LaTeX&lt;/a&gt;, vocês têm praticamente tudo para tirar as suas dúvidas.&lt;/p&gt;
 
 &lt;h2 id=&#34;figuras&#34;&gt;Figuras&lt;/h2&gt;
 
@@ -201,11 +301,11 @@ Logo, as raízes são: $x_1 = 1$ e $x_2 = -13$.
     </item>
     
     <item>
-      <title>LaTeX para quem quer terminar o TCC em UM mês: Parte 1</title>
-      <link>https://davidfonseca.com.br/blog/latex-para-quem-quer-terminar-o-tcc-em-um-m%C3%AAs-parte-1/</link>
-      <pubDate>Wed, 03 May 2017 18:34:15 -0300</pubDate>
+      <title>LaTeX para quem quer terminar o TCC em UM mês: Parte 1 de 3</title>
+      <link>https://davidfonseca.com.br/blog/latex-para-quem-quer-terminar-o-tcc-em-um-m%C3%AAs-parte-1-de-3/</link>
+      <pubDate>Sat, 06 May 2017 18:34:15 -0300</pubDate>
       
-      <guid>https://davidfonseca.com.br/blog/latex-para-quem-quer-terminar-o-tcc-em-um-m%C3%AAs-parte-1/</guid>
+      <guid>https://davidfonseca.com.br/blog/latex-para-quem-quer-terminar-o-tcc-em-um-m%C3%AAs-parte-1-de-3/</guid>
       <description>
 
 &lt;!-- ## Introdução --&gt;
