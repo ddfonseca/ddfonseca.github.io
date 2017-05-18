@@ -23,7 +23,7 @@
 
 &lt;h3 id=&#34;cuidado-normas-nebulosas&#34;&gt;Cuidado: normas nebulosas!&lt;/h3&gt;
 
-&lt;p&gt;Os próprios criadores da classe abnTeX2 comentam na seção 3.2 da &lt;a href=&#34;http://mirror.unl.edu/ctan/macros/latex/contrib/abntex2/doc/abntex2cite-alf.pdf&#34;&gt;documentação da classe&lt;/a&gt;, que as normas são confusas. Inclusive o próprio nome &lt;strong&gt;abnTeX2&lt;/strong&gt; não vem de ABNT e sim de &lt;em&gt;ABsurd Norms for TeX&lt;/em&gt; (&lt;a href=&#34;http://www.abntex.net.br/&#34;&gt;confira&lt;/a&gt;). Veja o que contém nessa seção:&lt;/p&gt;
+&lt;p&gt;Os próprios criadores da classe abnTeX2 comentam na seção 3.2 da &lt;a href=&#34;http://mirror.unl.edu/ctan/macros/latex/contrib/abntex2/doc/abntex2cite-alf.pdf&#34;&gt;documentação do pacote&lt;/a&gt;, que as normas são confusas. Inclusive o próprio nome &lt;strong&gt;abnTeX2&lt;/strong&gt; não vem de ABNT e sim de &lt;a href=&#34;http://www.abntex.net.br/&#34;&gt;&lt;em&gt;ABsurd Norms for TeX&lt;/em&gt;&lt;/a&gt;. Veja o que contém nessa seção:&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Nós elaboramos os estilos debruçados diretamente sobre os originais da ABNT e as seguimos escrupulosamente.  Mas não se iluda!  O que a sua coordenação de pós-graduação, ou orientador, ou chefe etc., entendem por ‘normas ABNT’ pode não ter qualquer vínculo com a realidade. Por isso não garantimos que ao usar os estilos do abnTeX você esteja em conformidade com as normas da sua instituição ou empresa.&lt;/p&gt;
@@ -58,7 +58,7 @@ publisher={John Wiley \&amp;amp; Sons, Inc},
 
 &lt;p&gt;Quando for digitar mais de um autor, deve separá-los todos por &amp;ldquo;&lt;strong&gt;and&lt;/strong&gt;&amp;rdquo; e não com a usual vírgula e &amp;ldquo;and&amp;rdquo; no final. Caso precise digitar algum texto em caixa alta, colocá-los entre chaves {}, por exemplo &amp;ldquo;title={Volume of Fluid ({VOF}) Method for the Dynamics of Free Boundaries}&amp;rdquo;. Caso precise de algum caractere especial como &lt;strong&gt;&amp;amp;&lt;/strong&gt;, utilizar o comando de escape \. Veja que todas as entradas terminam com uma chave e vírgula &amp;ldquo;},&amp;rdquo; e não esqueça da última chave para fechar o formato. O resto é autoexplicativo.&lt;/p&gt;
 
-&lt;p&gt;Depois que você preencher todas as entradas, está na hora de citar. No arquivo comandos_fundamentais.tex, lá no final estará o comando &lt;code&gt;\bibliography{bibliografia}&lt;/code&gt; que é o nome desse arquivo sem a extensão &lt;em&gt;.bib&lt;/em&gt;. O abntex2 criará uma página chamada Referências e nele colocará toda sas referências que você &lt;strong&gt;citar&lt;/strong&gt; no texto. As vezes as pessoas se confundem que só porque o arquivo &lt;em&gt;bibliografia.bib&lt;/em&gt; está cheio de referências, que automaticamente elas estarão inseridas no trabalho. Só estarão inseridas, caso você cite de forma direta ou indiretamente no texto, que veremos agora.&lt;/p&gt;
+&lt;p&gt;Depois que você preencher todas as entradas, está na hora de citar. No arquivo comandos_fundamentais.tex, lá no final estará o comando &lt;code&gt;\bibliography{bibliografia}&lt;/code&gt; que é o nome desse arquivo sem a extensão &lt;em&gt;.bib&lt;/em&gt;. O abntex2cite criará uma página chamada Referências e nele colocará todas as referências que você &lt;strong&gt;citar&lt;/strong&gt; no texto. As vezes as pessoas se confundem que só porque o arquivo &lt;em&gt;bibliografia.bib&lt;/em&gt; está cheio de referências, que automaticamente elas estarão inseridas no trabalho. Só estarão inseridas, caso você cite de forma direta ou indiretamente no texto, que veremos agora.&lt;/p&gt;
 
 &lt;h3 id=&#34;citações-direta-e-indireta&#34;&gt;Citações direta e indireta&lt;/h3&gt;
 
@@ -103,9 +103,9 @@ cisalhamento deforma continuamente.
 
 &lt;p&gt;Apesar dos dois primeiros links serem de um grupo da Google, você deve estar pensando: ninguém usa esses grupos! Errado, porque quem está inscrito no grupo recebe as notificações por e-mail, aí as pessoas respondem. A frequência não é tão alta, mas existe atividade de pelo menos uma pergunta por semana. A última foi dia 15 de Maio de 2017.&lt;/p&gt;
 
-&lt;p&gt;Por fim, caso queira apostilas bem completas sobre LaTeX, basta digitar no Google: &lt;a href=&#34;https://www.google.com.br/search?q=latex+filetype:pdf&amp;amp;ie=utf-8&amp;amp;oe=utf-8&amp;amp;client=firefox-b-ab&amp;amp;gws_rd=cr&amp;amp;ei=nhgeWYWsC8L9wQTh_JDIDQ#safe=active&amp;amp;q=latex+filetype:pdf&#34;&gt;latex filetype:pdf&lt;/a&gt;, que vocês encontrarão diversas apostilas, mini cursos sobre LaTeX.&lt;/p&gt;
+&lt;p&gt;Por fim, caso queira apostilas bem completas sobre LaTeX, basta digitar no Google: &lt;a href=&#34;https://www.google.com.br/search?q=latex+filetype:pdf&amp;amp;ie=utf-8&amp;amp;oe=utf-8&amp;amp;client=firefox-b-ab&amp;amp;gws_rd=cr&amp;amp;ei=nhgeWYWsC8L9wQTh_JDIDQ#safe=active&amp;amp;q=latex+filetype:pdf&#34;&gt;latex filetype:pdf&lt;/a&gt;, que vocês encontrarão diversas apostilas e mini cursos sobre LaTeX.&lt;/p&gt;
 
-&lt;p&gt;Valeu!&lt;/p&gt;
+&lt;p&gt;Obrigado!&lt;/p&gt;
 </description>
     </item>
     
