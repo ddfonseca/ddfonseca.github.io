@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://davidfonseca.com.br/blog/latex-para-quem-quer-terminar-o-tcc-em-um-m%C3%AAs-parte-3-de-3/</loc>
+    <loc>https://davidfonseca.com.br/blog/latex-3-de-3-refer%C3%AAncias-bibliogr%C3%A1ficas./</loc>
     <lastmod>2017-05-17T21:40:09-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://davidfonseca.com.br/blog/latex-para-quem-quer-terminar-o-tcc-em-um-m%C3%AAs-parte-2-de-3/</loc>
+    <loc>https://davidfonseca.com.br/blog/latex-2-de-3-equa%C3%A7%C3%B5es-matem%C3%A1ticas-tabelas-e-figuras./</loc>
     <lastmod>2017-05-13T20:30:35-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://davidfonseca.com.br/blog/latex-para-quem-quer-terminar-o-tcc-em-um-m%C3%AAs-parte-1-de-3/</loc>
+    <loc>https://davidfonseca.com.br/blog/latex-1-de-3-introdu%C3%A7%C3%A3o-e-primeiro-passos./</loc>
     <lastmod>2017-05-06T18:34:15-03:00</lastmod>
   </url>
   
@@ -38,6 +39,11 @@
   </url>
   
   <url>
+    <loc>https://davidfonseca.com.br/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://davidfonseca.com.br/</loc>
     <lastmod>2017-05-17T21:40:09-03:00</lastmod>
     <priority>0</priority>
@@ -58,19 +64,20 @@
   </url>
   
   <url>
-    <loc>https://davidfonseca.com.br/tags/projects/</loc>
-    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://davidfonseca.com.br/projects/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://davidfonseca.com.br/tags/projects/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://davidfonseca.com.br/tags/</loc>
+    <lastmod>2017-05-17T21:40:09-03:00</lastmod>
     <priority>0</priority>
   </url>
   

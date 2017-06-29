@@ -11,12 +11,17 @@
 <meta name="description" content="Example blog">
 
 
+<meta property="og:site_name" content="David Fonseca" />
+<meta property="og:locale" content="nn_NO" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://davidfonseca.com.br/blog/" />
+<meta property="og:title" content="Blog" />
 <meta property="twitter:title" content="Blog">
 
     <meta property="twitter:card" content="summary">
 
+<meta property="og:description" content="">
 <meta property="twitter:description" content="">
-
 <title>
 
 
@@ -29,7 +34,7 @@
 <style media="screen">
   @font-face {
   font-family: 'Nexa Bold';
-  src: url('/fonts/Nexa Bold.otf');
+  src: url('https://davidfonseca.com.br/fonts/Nexa Bold.otf');
 }
 
 html, body, div, span, applet, object, iframe,
@@ -525,12 +530,6 @@ section.main .content .markdown pre {
   word-break: break-all;
   word-wrap: break-word;
 }
-@media (min-width: 769px) {
-  section.main .content .markdown pre {
-    width: 110%;
-    margin-left: -4%;
-  }
-}
 section.main .content .markdown pre code {
   /* enclosed by 4 backticks (````) */
   padding: 0;
@@ -655,6 +654,7 @@ section.main .content .navigation {
   -moz-align-items: center;
   -ms-align-items: center;
   align-items: center;
+  padding: 2em;
 }
 section.main .content .navigation div {
   display: -webkit-flex;
@@ -678,10 +678,33 @@ section.main .content .navigation .icon {
 }
 section.main .content .navigation a {
   width: 250px;
-  margin-left: 1em;
+  margin: 0 1em;
   text-align: center;
   font-style: italic;
   color: #313537;
+}
+section.main .content .share, section.main .content .share div {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+section.main .content .share {
+  background-color: rgba(152, 152, 152, 0.07);
+  padding: 1em 0;
+}
+section.main .content .share a {
+  margin: 0 6px;
 }
 
 /* Fonts */
@@ -866,6 +889,10 @@ max-width: 110%;
 width: 110%;
 margin-left: -4%;
 }
+section.main .content .markdown pre {
+width: 110%;
+margin-left: -4%;
+}
 </style>
 
 <noscript>
@@ -887,6 +914,8 @@ margin-left: -4%;
   <style type="text/css" media="screen">
     .progressive{overflow:hidden;position:relative;background:#efefef}.progressive__img{width:100%;height:100%;position:absolute;-webkit-transform:translateZ(0);transform:translateZ(0)}.progressive--not-loaded{filter:blur(30px);-webkit-filter:blur(30px)}.progressive--is-loaded{filter:blur(20px);-webkit-filter:blur(20px);-webkit-animation:sharpen .5s both;animation:sharpen .5s both}@-webkit-keyframes sharpen{from{filter:blur(20px);-webkit-filter:blur(20px)}to{filter:blur(0);-webkit-filter:blur(0)}}@keyframes sharpen{from{filter:blur(20px);-webkit-filter:blur(20px)}to{filter:blur(0);-webkit-filter:blur(0)}}
   </style>
+
+
 
 
 
@@ -952,7 +981,13 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
 .hljs-built_in, .hljs-bullet, .hljs-code, .hljs-addition {
     color: #97d28b;
 }
+
+.ssk {
+    background-color: #6a7a8b;
+}
   </style>
+
+
 
 
 
@@ -986,8 +1021,6 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
                     
                         <a href="https://davidfonseca.com.br/blog/"><li>Blog</li></a>
                     
-                    
-                        
                     
                         
                             
@@ -1025,19 +1058,19 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
                         
                             <li class="post-item">
     <span class="meta">May 17, 2017</span>
-    <a href="https://davidfonseca.com.br/blog/latex-para-quem-quer-terminar-o-tcc-em-um-m%C3%AAs-parte-3-de-3/"><span>LaTeX para quem quer terminar o TCC em UM mês: Parte 3 de 3</span></a>
+    <a href="https://davidfonseca.com.br/blog/latex-3-de-3-refer%C3%AAncias-bibliogr%C3%A1ficas./"><span>LaTeX 3 de 3: Referências Bibliográficas.</span></a>
 </li>
 
                         
                             <li class="post-item">
     <span class="meta">May 13, 2017</span>
-    <a href="https://davidfonseca.com.br/blog/latex-para-quem-quer-terminar-o-tcc-em-um-m%C3%AAs-parte-2-de-3/"><span>LaTeX para quem quer terminar o TCC em UM mês: Parte 2 de 3</span></a>
+    <a href="https://davidfonseca.com.br/blog/latex-2-de-3-equa%C3%A7%C3%B5es-matem%C3%A1ticas-tabelas-e-figuras./"><span>LaTeX 2 de 3: Equações Matemáticas, Tabelas e Figuras.</span></a>
 </li>
 
                         
                             <li class="post-item">
     <span class="meta">May 6, 2017</span>
-    <a href="https://davidfonseca.com.br/blog/latex-para-quem-quer-terminar-o-tcc-em-um-m%C3%AAs-parte-1-de-3/"><span>LaTeX para quem quer terminar o TCC em UM mês: Parte 1 de 3</span></a>
+    <a href="https://davidfonseca.com.br/blog/latex-1-de-3-introdu%C3%A7%C3%A3o-e-primeiro-passos./"><span>LaTeX 1 de 3: Introdução e Primeiro Passos.</span></a>
 </li>
 
                         
@@ -1049,14 +1082,21 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
 </section>
 <section class="footer">
     <div class="container">
+
+        
+
         <div class="copyright">
 
         
-            <a href="https://davidfonseca.com.br/license">Copyright © 2017 David Fonseca</a>
+            
+                <a href="https://davidfonseca.com.br/license">Copyright © 2017 David Fonseca</a>
+            
         
 
         </div>
         <div class="icons">
+
+        
 
         
             <a href="https://github.com/ddfonseca" target="_blank">
@@ -1104,6 +1144,11 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
 
 
 
+
+
+
+
+
 <script>
   window.onload = function() {
     
@@ -1111,6 +1156,7 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
     
     
       progressively.init({delay: 30, throttle: 50});
+    
     
   };
 </script>
