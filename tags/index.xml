@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2017 David Fonseca</copyright>
-    <lastBuildDate>Wed, 17 May 2017 21:40:09 -0300</lastBuildDate>
+    <lastBuildDate>Thu, 29 Jun 2017 19:00:00 -0300</lastBuildDate>
     
 	<atom:link href="https://davidfonseca.com.br/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Boredom</title>
+      <link>https://davidfonseca.com.br/tags/boredom/</link>
+      <pubDate>Thu, 29 Jun 2017 19:00:00 -0300</pubDate>
+      
+      <guid>https://davidfonseca.com.br/tags/boredom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep Work</title>
+      <link>https://davidfonseca.com.br/tags/deep-work/</link>
+      <pubDate>Thu, 29 Jun 2017 19:00:00 -0300</pubDate>
+      
+      <guid>https://davidfonseca.com.br/tags/deep-work/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Latex</title>
@@ -22,11 +40,11 @@
     </item>
     
     <item>
-      <title>Projects</title>
-      <link>https://davidfonseca.com.br/tags/projects/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <title>Social Media</title>
+      <link>https://davidfonseca.com.br/tags/social-media/</link>
+      <pubDate>Thu, 29 Jun 2017 19:00:00 -0300</pubDate>
       
-      <guid>https://davidfonseca.com.br/tags/projects/</guid>
+      <guid>https://davidfonseca.com.br/tags/social-media/</guid>
       <description></description>
     </item>
     
