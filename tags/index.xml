@@ -6,11 +6,28 @@
     <description>Recent content in Tags on David Fonseca</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <copyright>Copyright © 2017 David Fonseca</copyright>
-    <lastBuildDate>Wed, 17 May 2017 21:40:09 -0300</lastBuildDate>
+    <lastBuildDate>Thu, 27 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://davidfonseca.com.br/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Backup</title>
+      <link>https://davidfonseca.com.br/tags/backup/</link>
+      <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidfonseca.com.br/tags/backup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google Drive</title>
+      <link>https://davidfonseca.com.br/tags/google-drive/</link>
+      <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidfonseca.com.br/tags/google-drive/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Latex</title>
@@ -18,6 +35,15 @@
       <pubDate>Wed, 17 May 2017 21:40:09 -0300</pubDate>
       
       <guid>https://davidfonseca.com.br/tags/latex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://davidfonseca.com.br/tags/linux/</link>
+      <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidfonseca.com.br/tags/linux/</guid>
       <description></description>
     </item>
     

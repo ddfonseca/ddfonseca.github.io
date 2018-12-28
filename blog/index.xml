@@ -6,11 +6,19 @@
     <description>Recent content in Blog on David Fonseca</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <copyright>Copyright © 2017 David Fonseca</copyright>
-    <lastBuildDate>Fri, 07 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://davidfonseca.com.br/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Como criar um backup automático para o Google Drive (No Linux).</title>
+      <link>https://davidfonseca.com.br/blog/como-criar-um-backup-autom%C3%A1tico-para-o-google-drive-no-linux./</link>
+      <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidfonseca.com.br/blog/como-criar-um-backup-autom%C3%A1tico-para-o-google-drive-no-linux./</guid>
+      <description>Sempre tive a preocupação de manter em segurança certos arquivos do meu computador, seja por motivo afetivo (ex: fotos) ou por realmente não querer perde-los (ex: configs do linux). Uma solução simples é enviar tudo para a nuvem, certo? Ok, mas e caso você tenha uma pasta, ou um grupo de arquivos que são editados constantementes (pelo menos 1x por semana)? Ter que fazer isso manualmente se torna uma tarefa tediosa e desnecessária.</description>
+    </item>
     
     <item>
       <title>Por que eu saí de todas as redes sociais?</title>

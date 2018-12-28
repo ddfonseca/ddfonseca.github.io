@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Google Drive on David Fonseca</title>
+    <link>https://davidfonseca.com.br/tags/google-drive/</link>
+    <description>Recent content in Google Drive on David Fonseca</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 27 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://davidfonseca.com.br/tags/google-drive/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Como criar um backup automático para o Google Drive (No Linux).</title>
+      <link>https://davidfonseca.com.br/blog/como-criar-um-backup-autom%C3%A1tico-para-o-google-drive-no-linux./</link>
+      <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidfonseca.com.br/blog/como-criar-um-backup-autom%C3%A1tico-para-o-google-drive-no-linux./</guid>
+      <description>Sempre tive a preocupação de manter em segurança certos arquivos do meu computador, seja por motivo afetivo (ex: fotos) ou por realmente não querer perde-los (ex: configs do linux). Uma solução simples é enviar tudo para a nuvem, certo? Ok, mas e caso você tenha uma pasta, ou um grupo de arquivos que são editados constantementes (pelo menos 1x por semana)? Ter que fazer isso manualmente se torna uma tarefa tediosa e desnecessária.</description>
+    </item>
+    
+  </channel>
+</rss>
