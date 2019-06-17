@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>Backup</title>
+      <title>backup</title>
       <link>https://davidfonseca.com.br/tags/backup/</link>
       <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
       
@@ -21,7 +21,7 @@
     </item>
     
     <item>
-      <title>Google Drive</title>
+      <title>google-drive</title>
       <link>https://davidfonseca.com.br/tags/google-drive/</link>
       <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
       
@@ -30,16 +30,7 @@
     </item>
     
     <item>
-      <title>Latex</title>
-      <link>https://davidfonseca.com.br/tags/latex/</link>
-      <pubDate>Wed, 17 May 2017 21:40:09 -0300</pubDate>
-      
-      <guid>https://davidfonseca.com.br/tags/latex/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linux</title>
+      <title>linux</title>
       <link>https://davidfonseca.com.br/tags/linux/</link>
       <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
       
@@ -48,11 +39,20 @@
     </item>
     
     <item>
-      <title>Social Media</title>
+      <title>social media</title>
       <link>https://davidfonseca.com.br/tags/social-media/</link>
       <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>https://davidfonseca.com.br/tags/social-media/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>latex</title>
+      <link>https://davidfonseca.com.br/tags/latex/</link>
+      <pubDate>Wed, 17 May 2017 21:40:09 -0300</pubDate>
+      
+      <guid>https://davidfonseca.com.br/tags/latex/</guid>
       <description></description>
     </item>
     

@@ -3,8 +3,44 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://davidfonseca.com.br/blog/</loc>
+    <lastmod>2018-12-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://davidfonseca.com.br/blog/como-criar-um-backup-autom%C3%A1tico-para-o-google-drive-no-linux./</loc>
     <lastmod>2018-12-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidfonseca.com.br/</loc>
+    <lastmod>2018-12-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://davidfonseca.com.br/tags/</loc>
+    <lastmod>2018-12-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://davidfonseca.com.br/tags/backup/</loc>
+    <lastmod>2018-12-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://davidfonseca.com.br/tags/google-drive/</loc>
+    <lastmod>2018-12-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://davidfonseca.com.br/tags/linux/</loc>
+    <lastmod>2018-12-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -13,8 +49,20 @@
   </url>
   
   <url>
+    <loc>https://davidfonseca.com.br/tags/social-media/</loc>
+    <lastmod>2017-07-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://davidfonseca.com.br/blog/latex-3-de-3-refer%C3%AAncias-bibliogr%C3%A1ficas./</loc>
     <lastmod>2017-05-17T21:40:09-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidfonseca.com.br/tags/latex/</loc>
+    <lastmod>2017-05-17T21:40:09-03:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -33,20 +81,14 @@
   </url>
   
   <url>
+    <loc>https://davidfonseca.com.br/projects/</loc>
+    <lastmod>2015-08-19T20:29:37-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://davidfonseca.com.br/projects/projects/</loc>
     <lastmod>2015-08-19T20:29:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://davidfonseca.com.br/tags/backup/</loc>
-    <lastmod>2018-12-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://davidfonseca.com.br/blog/</loc>
-    <lastmod>2018-12-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -55,53 +97,11 @@
   </url>
   
   <url>
-    <loc>https://davidfonseca.com.br/</loc>
-    <lastmod>2018-12-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://davidfonseca.com.br/tags/google-drive/</loc>
-    <lastmod>2018-12-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://davidfonseca.com.br/home/</loc>
   </url>
   
   <url>
-    <loc>https://davidfonseca.com.br/tags/latex/</loc>
-    <lastmod>2017-05-17T21:40:09-03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://davidfonseca.com.br/license/</loc>
-  </url>
-  
-  <url>
-    <loc>https://davidfonseca.com.br/tags/linux/</loc>
-    <lastmod>2018-12-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://davidfonseca.com.br/projects/</loc>
-    <lastmod>2015-08-19T20:29:37-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://davidfonseca.com.br/tags/social-media/</loc>
-    <lastmod>2017-07-07T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://davidfonseca.com.br/tags/</loc>
-    <lastmod>2018-12-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>
