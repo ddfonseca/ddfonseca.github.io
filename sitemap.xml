@@ -3,9 +3,38 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://davidfonseca.com.br/blog/add-ons-fundamentais-para-o-estudo-de-concursos-p%C3%BAblicos-no-anki/</loc>
+    <lastmod>2019-09-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidfonseca.com.br/tags/anki/</loc>
+    <lastmod>2019-09-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://davidfonseca.com.br/blog/</loc>
+    <lastmod>2019-09-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidfonseca.com.br/</loc>
+    <lastmod>2019-09-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidfonseca.com.br/tags/repeti%C3%A7%C3%A3o-espa%C3%A7ada/</loc>
+    <lastmod>2019-09-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidfonseca.com.br/tags/</loc>
+    <lastmod>2019-09-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidfonseca.com.br/tags/backup/</loc>
     <lastmod>2018-12-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -14,33 +43,13 @@
   </url>
   
   <url>
-    <loc>https://davidfonseca.com.br/</loc>
-    <lastmod>2018-12-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://davidfonseca.com.br/tags/</loc>
-    <lastmod>2018-12-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://davidfonseca.com.br/tags/backup/</loc>
-    <lastmod>2018-12-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://davidfonseca.com.br/tags/google-drive/</loc>
     <lastmod>2018-12-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://davidfonseca.com.br/tags/linux/</loc>
     <lastmod>2018-12-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -51,18 +60,16 @@
   <url>
     <loc>https://davidfonseca.com.br/tags/social-media/</loc>
     <lastmod>2017-07-07T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://davidfonseca.com.br/blog/latex-3-de-3-refer%C3%AAncias-bibliogr%C3%A1ficas./</loc>
-    <lastmod>2017-05-17T21:40:09-03:00</lastmod>
   </url>
   
   <url>
     <loc>https://davidfonseca.com.br/tags/latex/</loc>
     <lastmod>2017-05-17T21:40:09-03:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://davidfonseca.com.br/blog/latex-3-de-3-refer%C3%AAncias-bibliogr%C3%A1ficas./</loc>
+    <lastmod>2017-05-17T21:40:09-03:00</lastmod>
   </url>
   
   <url>
@@ -83,7 +90,6 @@
   <url>
     <loc>https://davidfonseca.com.br/projects/</loc>
     <lastmod>2015-08-19T20:29:37-07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -93,7 +99,6 @@
   
   <url>
     <loc>https://davidfonseca.com.br/categories/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
