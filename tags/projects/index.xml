@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>projects on David Fonseca</title>
+    <link>https://davidfonseca.com.br/tags/projects/</link>
+    <description>Recent content in projects on David Fonseca</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://davidfonseca.com.br/tags/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A small project example : add yours !</title>
+      <link>https://davidfonseca.com.br/projects/small-project/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidfonseca.com.br/projects/small-project/</guid>
+      <description>Exemplo de um projeto. Em breve.</description>
+    </item>
+    
+  </channel>
+</rss>

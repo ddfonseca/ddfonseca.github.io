@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -18,11 +18,6 @@
   </url>
   
   <url>
-    <loc>https://davidfonseca.com.br/</loc>
-    <lastmod>2019-09-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://davidfonseca.com.br/tags/repeti%C3%A7%C3%A3o-espa%C3%A7ada/</loc>
     <lastmod>2019-09-18T00:00:00+00:00</lastmod>
   </url>
@@ -30,6 +25,36 @@
   <url>
     <loc>https://davidfonseca.com.br/tags/</loc>
     <lastmod>2019-09-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidfonseca.com.br/blog/cant-hurt-me./</loc>
+    <lastmod>2019-08-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidfonseca.com.br/tags/david-goggins/</loc>
+    <lastmod>2019-08-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidfonseca.com.br/tags/mind/</loc>
+    <lastmod>2019-08-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidfonseca.com.br/tags/mindset/</loc>
+    <lastmod>2019-08-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidfonseca.com.br/tags/concursos-p%C3%BAblicos/</loc>
+    <lastmod>2018-12-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidfonseca.com.br/blog/uma-nova-sugest%C3%A3o-para-revisar-com-o-anki./</loc>
+    <lastmod>2018-12-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -50,6 +75,31 @@
   <url>
     <loc>https://davidfonseca.com.br/tags/linux/</loc>
     <lastmod>2018-12-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidfonseca.com.br/tags/focus/</loc>
+    <lastmod>2018-01-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidfonseca.com.br/blog/uma-mente-distra%C3%ADda-%C3%A9-uma-mente-infeliz./</loc>
+    <lastmod>2018-01-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidfonseca.com.br/blog/como-plotar-os-res%C3%ADduos-do-openfoam-com-o-gnuplot/</loc>
+    <lastmod>2017-08-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidfonseca.com.br/tags/openfoam/</loc>
+    <lastmod>2017-08-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidfonseca.com.br/tags/residuo/</loc>
+    <lastmod>2017-08-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -83,13 +133,38 @@
   </url>
   
   <url>
+    <loc>https://davidfonseca.com.br/projects/small-project/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidfonseca.com.br/projects/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidfonseca.com.br/tags/projects/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidfonseca.com.br/blog/example-article/</loc>
+    <lastmod>2015-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidfonseca.com.br/blog/example-article/</loc>
+    <lastmod>2015-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://davidfonseca.com.br/about/</loc>
     <lastmod>2015-08-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://davidfonseca.com.br/projects/</loc>
-    <lastmod>2015-08-19T20:29:37-07:00</lastmod>
+    <loc>https://davidfonseca.com.br/</loc>
+    <lastmod>2015-08-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>

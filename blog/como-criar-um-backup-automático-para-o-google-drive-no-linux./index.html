@@ -1007,44 +1007,53 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
 
 <body>
 
-
-<section class="header">
-
-    <div class="container">
-        <a href="https://davidfonseca.com.br/"><img class="logo" src="https://davidfonseca.com.br/img/logo.png" alt="logo" /></a>
-        <div class="content">
-            <a href="https://davidfonseca.com.br/"><div class="name"><h1>David Fonseca</h1></div></a>
-            <nav>
-                <ul>
-                    
-                        <a href="https://davidfonseca.com.br/blog/"><li>Blog</li></a>
-                    
-                    
-                        
-                            
-                        
-                    
-                        
-                            
-                            <a href="https://davidfonseca.com.br/projects"><li>projects</li></a>
-                            
-                        
-                    
-                    
-                        
-                            <a href="https://davidfonseca.com.br/about/"><li>About</li></a>
-                        
-                    
-                        
-                    
-                        
-                    
-                </ul>
-            </nav>
-        </div>
-    </div>
-</section>
-
+    
+    <section class="header">
+        
+            <div class="container">
+                <a href="https://davidfonseca.com.br/"><img class="logo" src="https://davidfonseca.com.br/img/logo.png" alt="logo" />
+                    <div class="content">
+                        <a href="https://davidfonseca.com.br/">
+                            <div class="name">
+                                <h1>David Fonseca</h1>
+                            </div>
+                        </a>
+                        <nav>
+                            <ul>
+                                
+                                <a href="https://davidfonseca.com.br/blog/">
+                                    <li>Blog</li>
+                                </a>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <a href="https://davidfonseca.com.br/projects">
+                                    <li>projects</li>
+                                </a>
+                                
+                                
+                                
+                                
+                                
+                                <a href="https://davidfonseca.com.br/about/">
+                                    <li>About</li>
+                                </a>
+                                
+                                
+                                
+                                
+                                
+                                
+                            </ul>
+                        </nav>
+                    </div>
+            </div>
+        </section>
 
 <section class="main post non-narrow zero-top-spacing">
     <div class="container">
@@ -1065,7 +1074,7 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
                         <div class="author" title="David Fonseca"><div class="middot"></div>David Fonseca</div>
                         
                     
-                    <div class="reading-time"><div class="middot"></div>4 minute read</div>
+                    <div class="reading-time"><div class="middot"></div>5 minute read</div>
                     <div class="tags">
                         <ul>
                           
@@ -1091,50 +1100,25 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
             <div class="markdown">
                 
     
-    
-
-<p>Sempre tive a preocupação de manter em segurança certos arquivos do meu computador, seja por motivo afetivo (ex: fotos) ou por realmente não querer perde-los (ex: configs do linux). Uma solução simples é enviar tudo para a nuvem, certo? Ok, mas e caso você tenha uma pasta, ou um grupo de arquivos que são editados constantementes (pelo menos 1x por semana)? Ter que fazer isso manualmente se torna uma tarefa tediosa e desnecessária.</p>
-
+    <p>Sempre tive a preocupação de manter em segurança certos arquivos do meu computador, seja por motivo afetivo (ex: fotos) ou por realmente não querer perde-los (ex: configs do linux). Uma solução simples é enviar tudo para a nuvem, certo? Ok, mas e caso você tenha uma pasta, ou um grupo de arquivos que são editados constantementes (pelo menos 1x por semana)? Ter que fazer isso manualmente se torna uma tarefa tediosa e desnecessária.</p>
 <p>Pensando nisso que existe programas como o <strong>cron</strong> (executa comandos de forma automática em certo horário/data) e <strong>rclone</strong> (uma espécie de cópia do rsync para a núvem). Nesse artigo, vou detalhar como podemos utilizar os dois para que um diretório seu tenha um backup regularmente, que pode ser uma vez por dia, uma vez por semana, como quiser.</p>
-
 <h2 id="configurando-rclone">Configurando Rclone</h2>
-
 <p>O processo para configurar o <strong>rclone</strong> encontra-se <a href="https://rclone.org/drive/">nessa página</a>. Não vou detalhar aqui pois muito provavelmente ao longo de novas versões o artigo ficaria desatualizado e também não é tão complicado assim seguir os passos. Qualquer coisa pode comentar que poderei ajudar.</p>
-
 <h3 id="criando-seu-primeiro-backup-com-rclone">Criando seu primeiro backup com rclone</h3>
-
 <p>Pois bem, com o rclone instalado e configurado vamos fazer um simples teste. Crie uma pasta chamada play (mkdir play) e vamos também criar uns arquivos: touch arquivo1.txt arquivo2.txt arquivo3.txt. Agora volta para o diretório anterior e digite:</p>
-
 <pre><code>rclone sync play remote:play
-</code></pre>
-
-<p>Caso você tenha configurado o nome do servidor conforme está escrito no tutorial original, você terá feito com o nome <strong>remote</strong>, caso contrário, digite o nome do qual você colocou. Dessa forma, ele vai sincronizar todos os arquivos dentro da pasta play e vai criar uma nova pasta play dentro do Google Drive. Se você deletar algum arquivo e digitar esse comando novamente, o rclone também deletará o arquivo dentro do Google Drive. Dessa forma, o comando <strong>sync</strong> funciona como esperado: ele sincroniza totalmente a sua pasta de origem para a pasta de destino.</p>
-
+</code></pre><p>Caso você tenha configurado o nome do servidor conforme está escrito no tutorial original, você terá feito com o nome <strong>remote</strong>, caso contrário, digite o nome do qual você colocou. Dessa forma, ele vai sincronizar todos os arquivos dentro da pasta play e vai criar uma nova pasta play dentro do Google Drive. Se você deletar algum arquivo e digitar esse comando novamente, o rclone também deletará o arquivo dentro do Google Drive. Dessa forma, o comando <strong>sync</strong> funciona como esperado: ele sincroniza totalmente a sua pasta de origem para a pasta de destino.</p>
 <p>Caso queira apenas copiar os arquivos do seu computador para o servidor, troque o comando para &ldquo;copy&rdquo;, ficando assim:</p>
-
 <pre><code>rclone copy play remote:play
-</code></pre>
-
-<h2 id="automatizando-rclone-no-cron">Automatizando Rclone no Cron</h2>
-
+</code></pre><h2 id="automatizando-rclone-no-cron">Automatizando Rclone no Cron</h2>
 <p>Agora vamos para o que interessa. O <strong>cron</strong> muito provavelmente já está instalado na sua máquina de Linux, se não estiver, basta instála-lo com seu gerenciador de pacotes do sistema, em seguida, digite no terminal:</p>
-
-<pre><code class="language-terminal">crontab -e
-</code></pre>
-
-<p>Abrirá um arquivo com o seu editor de texto, agora, podemos configurar de tempo em tempo que o cron vai executar os comandos descritos.</p>
-
+<pre><code class="language-terminal" data-lang="terminal">crontab -e
+</code></pre><p>Abrirá um arquivo com o seu editor de texto, agora, podemos configurar de tempo em tempo que o cron vai executar os comandos descritos.</p>
 <p>No exemplo abaixo, eu peço para o cron que execute o comando &ldquo;rclone sync &hellip;&rdquo; da minha pasta pessoal do Anki para o Google Drive, de 4h em 4h horas, todos os dias da semana. Como eu costumo usar o computador ao longo do dia, muito provavelmente ele vai executar o rclone nos períodos: 8h, 12h, 16h e 20h. Mas também faria caso eu estivesse com o computador ligado por 00h e 04h da manhã. Gosto de colocar essa frequência alta porque estou todos os dias modificando e criando novos Cards no Anki, dessa forma gostaria de estar o mais atualizado possível caso perca esses arquivos.</p>
-
-<pre><code class="language-terminal">0 */4 * * * rclone sync  -q $HOME/.local/share/Anki2 remote:Anki\ sync/Anki2
-</code></pre>
-
-<h2 id="explicando-como-funciona-o-crontab">Explicando como funciona o crontab</h2>
-
+<pre><code class="language-terminal" data-lang="terminal">0 */4 * * * rclone sync  -q $HOME/.local/share/Anki2 remote:Anki\ sync/Anki2
+</code></pre><h2 id="explicando-como-funciona-o-crontab">Explicando como funciona o crontab</h2>
 <p>O mais importante é saber como funciona as 5 primeiras colunas, pois são nessas colunas que você programa em qual dia/horário será executado seus comandos.</p>
-
 <p>Pois bem, veja a tabela abaixo no qual é mostrado o significado de cada coluna (campo):</p>
-
 <table>
 <thead>
 <tr>
@@ -1143,38 +1127,32 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
 <th align="center">Valores</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="center">1</td>
 <td align="center">Minutos</td>
 <td align="center">0 a 59</td>
 </tr>
-
 <tr>
 <td align="center">2</td>
 <td align="center">Hora</td>
 <td align="center">0 a 23</td>
 </tr>
-
 <tr>
 <td align="center">3</td>
 <td align="center">Dia do mês</td>
 <td align="center">1 a 31</td>
 </tr>
-
 <tr>
 <td align="center">4</td>
 <td align="center">Mês</td>
 <td align="center">1 a 12</td>
 </tr>
-
 <tr>
 <td align="center">5</td>
 <td align="center">Dia da semana</td>
 <td align="center">0 a 7 (0 e 7 = domingo)</td>
 </tr>
-
 <tr>
 <td align="center">6</td>
 <td align="center">Comando a ser executado</td>
@@ -1182,59 +1160,40 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
 </tr>
 </tbody>
 </table>
-
 <p>Portanto, no nosso exemplo acima, o primeiro campo coloquei 0 porque representa no minuto 0, se fosse 30, seria no minuto 30. No segundo, eu coloquei a ada 4 horas. Nos campos 3, 4 e 5, qualquer dia do mês, qualquer mês, qualquer dia da semana respecticamente, ou seja, <strong>todos os dias</strong>.</p>
-
 <p>Um ótimo site para brincar com esses números é o <a href="https://crontab.guru/">crontab.guru</a>.</p>
-
 <h3 id="exemplo-1-toda-segunda-feira-às-9h-da-manhã-semanalmente">Exemplo 1: Toda segunda-feira às 9h da manhã. (Semanalmente)</h3>
-
 <pre><code>0 9 * * 1 [comando]
-</code></pre>
-
-<p>Será executado em: <br />
-2018-12-31 09:00:00 <br />
-2019-01-07 09:00:00 <br />
-2019-01-14 09:00:00 <br />
-2019-01-21 09:00:00 <br />
+</code></pre><p>Será executado em: \<br>
+2018-12-31 09:00:00 \<br>
+2019-01-07 09:00:00 \<br>
+2019-01-14 09:00:00 \<br>
+2019-01-21 09:00:00 \<br>
 2019-01-28 09:00:00</p>
-
 <h3 id="exemplo-2-de-segunda-feira-a-sexta-feira-às-22h">Exemplo 2: De segunda-feira a sexta-feira às 22h.</h3>
-
 <pre><code>0 22 * * 1-5 [comando]
-</code></pre>
-
-<p>Será executado em: <br />
-2018-12-28 22:00:00 (hoje é quinta-feira depois das 22h, logo será amanhã sexta-feira e depois só segunda-feira novamente) <br />
-2018-12-31 22:00:00 <br />
-2019-01-01 22:00:00 <br />
-2019-01-02 22:00:00 <br />
+</code></pre><p>Será executado em: \<br>
+2018-12-28 22:00:00 (hoje é quinta-feira depois das 22h, logo será amanhã sexta-feira e depois só segunda-feira novamente) \<br>
+2018-12-31 22:00:00 \<br>
+2019-01-01 22:00:00 \<br>
+2019-01-02 22:00:00 \<br>
 2019-01-03 22:00:00</p>
-
 <h3 id="exemplo-3-todo-dia-primeiro-de-cada-mês-às-12h30m-mensalmente">Exemplo 3: Todo dia primeiro de cada mês às 12h30m. (Mensalmente)</h3>
-
 <pre><code>30 12 1 * * [comando]
-</code></pre>
-
-<p>Será executado em: <br />
-2019-01-01 12:30:00 <br />
-2019-02-01 12:30:00 <br />
-2019-03-01 12:30:00 <br />
-2019-04-01 12:30:00 <br />
+</code></pre><p>Será executado em: \<br>
+2019-01-01 12:30:00 \<br>
+2019-02-01 12:30:00 \<br>
+2019-03-01 12:30:00 \<br>
+2019-04-01 12:30:00 \<br>
 2019-05-01 12:30:00</p>
-
 <h3 id="exemplo-4-todos-os-dias-a-cada-4h-de-8h-até-20h-diariamente">Exemplo 4: Todos os dias a cada 4h de 8h até 20h. (Diariamente)</h3>
-
 <pre><code>0 8-20/4 * * * [comando]
-</code></pre>
-
-<p>Será executado em: <br />
-2018-12-28 08:00:00 <br />
-2018-12-28 12:00:00 <br />
-2018-12-28 16:00:00 <br />
-2018-12-28 20:00:00 <br />
+</code></pre><p>Será executado em: \<br>
+2018-12-28 08:00:00 \<br>
+2018-12-28 12:00:00 \<br>
+2018-12-28 16:00:00 \<br>
+2018-12-28 20:00:00 \<br>
 2018-12-29 08:00:00</p>
-
 <p>Pronto, e assim nunca mais você precisa se preocupar se os seus arquivos estão seguros pois o cron e o rclone fazem o papel de salva-los para você.</p>
 
 
@@ -1246,13 +1205,13 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
                     
                     <div>
                         <img class="icon" src="https://davidfonseca.com.br/img/back.svg" alt="back" />
-                        <a href="https://davidfonseca.com.br/blog/por-que-eu-sa%C3%AD-de-todas-as-redes-sociais/">Por que eu saí de todas as redes sociais?</a>
+                        <a href="https://davidfonseca.com.br/blog/uma-mente-distra%C3%ADda-%C3%A9-uma-mente-infeliz./">Uma mente distraída é uma mente infeliz.</a>
                     </div>
                     
                     <div style="width: 100%;"></div>
                     
                     <div>
-                        <a href="https://davidfonseca.com.br/blog/add-ons-fundamentais-para-o-estudo-de-concursos-p%C3%BAblicos-no-anki/">Add-ons fundamentais para o estudo de concursos públicos no Anki</a>
+                        <a href="https://davidfonseca.com.br/blog/uma-nova-sugest%C3%A3o-para-revisar-com-o-anki./">Uma nova sugestão para revisar com o Anki.</a>
                         <img class="icon" src="https://davidfonseca.com.br/img/next.svg" alt="next" />
                     </div>
                     
